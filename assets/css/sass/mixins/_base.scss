@@ -1,0 +1,106 @@
+// **************
+// GENERAL MIXINS
+// **************
+
+// Disabled color
+@function disable($color,$percentage: $btn-disable-percentage){
+	@return lighten($color,$percentage);
+}
+
+// Returns a blank string if smallest breakpoint, otherwise returns the name with a dash infront.
+// Useful for making responsive utilities.
+//
+//    >> breakpoint-infix(xs, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))
+//    ""  (Returns a blank string)
+//    >> breakpoint-infix(sm, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))
+//    "-sm"
+@function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
+  @return if(breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
+}
+
+// Name of the next breakpoint, or null for the last breakpoint.
+//
+//    >> breakpoint-next(sm)
+//    md
+//    >> breakpoint-next(sm, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))
+//    md
+//    >> breakpoint-next(sm, $breakpoint-names: (xs sm md lg xl))
+//    md
+@function breakpoint-next($name, $breakpoints: $grid-breakpoints, $breakpoint-names: map-keys($breakpoints)) {
+  $n: index($breakpoint-names, $name);
+  @return if($n < length($breakpoint-names), nth($breakpoint-names, $n + 1), null);
+}
+
+// Underline
+@mixin underline($color:$link-color,$border-width: $border-width,$disabled: false){
+	text-decoration: none;
+	text-shadow: 
+		-#{$border-width} $border-width 0px $background-color, 
+		$border-width $border-width 0px $background-color;
+   	white-space: nowrap;
+   	position: relative;
+
+	&:after{
+		content: "";
+		position: absolute;
+		background: $color;
+		display: block;
+		left: 0;
+		bottom: -$border-width/2;
+		width: 100%;
+		height: $border-width;
+		z-index: -1;
+		transition: width $transition-timing $transition-timing-function;
+	}
+
+	@if $disabled == false{
+		&:hover{
+			&:after{
+				width: 0;
+			}
+		}
+	}
+}
+
+// Split margins or padding
+// Acceptable direction values: vertical, horizontal, top, right, bottom, left
+@function split-values($value,$direction: vertical){
+	$length: length($value);
+
+	// If the direction has one value, use it
+	@if $length == 1{
+		@return $value;
+	}
+
+	// If the direction has two values, use first for vertical, use second for horizontal
+	@else if $length == 2{
+		// If vertical, use first value
+		@if $direction == vertical {
+			@return nth($value,1);
+		}
+		// If horizontal, use second value
+		@else {
+			@return nth($value,2);
+		}
+	}
+	
+	// If four values
+	@else {
+		// If vertical or top, use first
+		@if ($direction == vertical) or ($direction == top){
+			@return nth($value,1);
+		}
+		// If horizontal or right, use second
+		@else if ($direction == horizontal) or ($direction == right){
+			@return nth($value,2);
+		}
+		// If bottom, use third
+		@else if $direction == bottom {
+			@return nth($value,3);
+		}
+		// If left
+		@else if $direction == left {
+			@return nth($value,4);
+		}
+	}
+}

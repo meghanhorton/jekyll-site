@@ -1,0 +1,18 @@
+// ******
+// LAYOUT
+// ******
+
+// CONTAINER
+
+	.container{
+		// SET WIDTHS
+		@include make-container();
+		@include make-container-max-widths();
+		
+		// ALIGNMENT
+		@if $container-alignment == "center" {
+			margin: 0 auto;
+		} @else if $container-alignment == "left" {
+			margin: 0 auto 0 0;
+		}
+	}

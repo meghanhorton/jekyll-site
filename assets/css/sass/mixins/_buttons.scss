@@ -1,0 +1,160 @@
+// BUTTON MIXINS
+
+// *********************
+// BUTTON COLOR VARIANTS
+// *********************
+
+	// OUTLINED BUTTONS
+	@mixin make-button-outline($colors: $btn-color-variants){
+		@each $label, $color in $colors{
+			// For default buttons with no classes, set default color
+			@if $label == default{
+				&{
+					@include button-outline($color);
+
+					&:disabled,&.disabled{
+						@include button-outline(disable($color));
+					}
+				}
+			// For other classes, set .btn-[color]
+			} @else {
+				&.btn-#{$label}{
+					@include button-outline($color);
+
+					&:disabled,&.disabled{
+						@include button-outline(disable($color));
+					}
+				}
+			}
+		}
+	}
+
+		// CREATE OUTLINE BUTTONS BASED ON COLOR
+		@mixin button-outline($color,$disabled: false,$hover-font-color:#fff){
+			background: transparent;
+			color: $color;
+
+			&:not(.btn-link){
+				border-color: $color;
+
+				@if $disabled == false {
+          &:not(:disabled):not(.disabled){
+  					&:hover{
+  						color: $hover-font-color;
+  						background: darken($color,20%);
+  						border-color: darken($color,20%);
+  					}
+
+  					&:active,&.active{
+  						color: $hover-font-color;
+  						background: darken($color,20%);
+  						border-color: darken($color,20%);
+  					}
+
+            &:active{
+              outline: solid lighten($color,35%);
+            }
+          }
+				}
+			}
+		}
+
+	// SOLID BUTTONS
+	@mixin make-button-solid($colors: $btn-color-variants){
+		@each $label, $color in $colors{
+			// For default buttons with no classes, set default color
+			@if $label == default{
+				&.btn-solid{
+					@include button-solid($color);
+
+					&:disabled,&.disabled{
+						@include button-solid(disable($color),true);
+					}
+				}
+			// For other classes, set .btn-[color]
+			} @else {
+				&.btn-solid.btn-#{$label}{
+					@include button-solid($color);
+
+					&:disabled,&.disabled{
+						@include button-solid(disable($color),true);
+					}
+				}
+			}
+		}
+	}
+		// CREATE OUTLINE BUTTONS BASED ON COLOR
+		@mixin button-solid($color,$disabled: false,$font-color: #fff){
+			background: $color;
+			color: $font-color;
+			border-color: transparent;
+
+			@if $disabled == false {
+        &:not(:disabled):not(.disabled){
+  				&:hover{
+  					background: darken($color,20%);
+  					color: $font-color;
+  				}
+
+  				&:active{
+  					outline: solid lighten($color,35%);
+  				}
+        }
+			}
+		}
+
+	// LINK BUTTONS
+	@mixin make-button-link($colors: $btn-color-variants){
+		@each $label, $color in $colors{
+			// For default buttons with no classes, set default color
+			@if $label == default{
+				&.btn-link{
+					@include underline($color);
+
+          &:disabled,&.disabled{
+            @include underline(disable($color),$link-underline-weight,true);
+          }
+				}
+			// For other classes, set .btn-[color]
+			} @else {
+				&.btn-link.btn-#{$label}{
+          @include underline($color);
+
+          &:disabled,&.disabled{
+            @include underline(disable($color),$link-underline-weight,true);
+          }
+				}
+			}
+		}
+	}
+
+// *********************
+// BUTTON SIZE VARIANTS
+// *********************
+
+	@mixin make-button-sizes($sizes: $btn-size-variants){
+		@each $label, $size in $sizes{
+			$font-size: 	map-get($size,'font-size');
+			$padding: 		map-get($size,'padding');
+			$border-width: 	map-get($size,'border-width');
+
+			// For default buttons with no classes, set default color
+			@if $label == default{
+				&{
+					@include make-button-size($font-size,$padding,$border-width);
+				}
+			// For other classes, set .btn-[color]
+			} @else {
+				&.btn-#{$label}{
+					@include make-button-size($font-size,$padding,$border-width);
+				}
+			}
+		}
+	}
+
+		// Button size
+		@mixin make-button-size($font-size: $font-size-base, $padding: $base $base*2, $border-width: $border-width){
+			font-size: $font-size;
+			padding: $padding;
+			border-width: $border-width;
+		}
