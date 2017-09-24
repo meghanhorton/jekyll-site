@@ -1,26 +1,30 @@
-{% for project in site.work %}
+{% assign projectLoop =  site.work | sort: 'weight' %}
+
+{% for project in projectLoop %}
 
 {% capture thecycle %}{% cycle 'odd','even' %}{% endcapture %}
 
 {% capture col-title %}
   <h3>{{ project.title }}</h3>
-  <h4 class="tags">{% include tags.html tags=project.tags %}</h4>
+  <h4 class="tags small">{% include tags.html tags=project.tags %}</h4>
   <p>{{ project.content }}</p>
   <div class="btn-wrapper">
-    <a href="{{ project.url }}" class="btn btn-outline btn-inline" target="_blank">Visit site</a>
+    <a href="{{ project.url }}" class="btn btn-outline btn-inline" target="_blank">{{ project.cta }}</a>
   </div>
 {% endcapture %}
 
 {% capture col-img %}
-  <img class="img-responsive" src="{{ site.baseurl }}{{ project.img }}" alt="{{ project.title }}">
+  <a href="{{ project.url }}" target="_blank">
+    <img class="img-responsive" src="{{ site.baseurl }}{{ project.img }}" alt="{{ project.title }}">
+  </a>
 {% endcapture %}
 
 <!-- project: {{ project.title }} -->
 <div class="row row-work">
-  <div class="col-sm-6{% if thecycle == 'even' %} push-sm-6{% endif %}">
+  <div class="col-md-6{% if thecycle == 'even' %} push-md-6{% endif %}">
     {{ col-title }}
   </div>
-  <div class="col-sm-6{% if thecycle == 'even' %} pull-sm-6{% endif %}">
+  <div class="col-md-6{% if thecycle == 'even' %} pull-md-6{% endif %}">
     {{ col-img }}
   </div>
 </div>

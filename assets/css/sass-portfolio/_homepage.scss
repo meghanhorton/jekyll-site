@@ -6,15 +6,12 @@
   section{
     padding: $margin-large;
 
-    &#expertise,
-    &#work{
+    // Expertise
+    &#expertise{
       h1,h2,h3,h4,h5,h6{
         text-align: center;
       }
-    }
 
-    // Expertise
-    &#expertise{
       span.icon{
         &:before{
           content: "";
@@ -46,16 +43,31 @@
     &#work{
       background: $gray-lighter;
 
+      &, div:not(.row.row-work){
+        h1,h2,h3,h4,h5,h6{
+          text-align: center;
+        }
+      }
+
       .row.row-work{
         padding: $margin-large;
       }
 
       .btn-wrapper{
         width: 100%;
-        text-align: center;
 
         .btn{
           margin: 0 auto;
+        }
+      }
+
+      .tags{
+        color: lighten($gray-base,25%);
+
+        .tag:before{
+          content: "\2022";
+          padding-right: $border-width*2;
+          color: $color-secondary;
         }
       }
       

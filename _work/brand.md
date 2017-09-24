@@ -1,9 +1,10 @@
 ---
-title: Cornell Brand
-weight: 1
+title: Brand Center
+weight: 2
 class: brand
 
 img: /assets/img/mockups/brand.png
+cta: "Visit site"
 tags:
   - "UX/UI"
   - "Design"

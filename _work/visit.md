@@ -1,9 +1,10 @@
 ---
-title: Cornell Visit Tool
-weight: 2
+title: Visiting Experience
+weight: 3
 class: brand
 
-img: /assets/img/mockups/brand.png
+img: /assets/img/mockups/visit.png
+cta: "Plan a visit"
 tags:
   - "UX/UI"
   - "Design"

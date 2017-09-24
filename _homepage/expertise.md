@@ -10,7 +10,7 @@ class: expertise
   <div class="col-sm-4" id="design">
     <span class="icon"></span>
     <h3>Design</h3>
-    <p>I've called myself a developer. I've called myself a designer. The truth is, I love both! I'm not one for pixel-perfect mockups &nbsp; working prototypes are my bread and butter.</p>
+    <p>Pixel-perfect mockups aren't my favorite &ndash; working HTML prototypes are my bread and butter.</p>
   </div>
   <div class="col-sm-4 icon" id="ux">
     <span class="icon"></span>
