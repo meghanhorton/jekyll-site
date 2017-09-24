@@ -65,8 +65,12 @@ body{
 			font-style: italic;
 		}
 
-		small{
+		small,.small{
 			font-size: $font-size-small;
+		}
+
+		.large{
+			font-size: 1.5em;
 		}
 
 		// HIGHLIGHT

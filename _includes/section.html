@@ -1,0 +1,8 @@
+{% for section in site.homepage %}
+  <section id="{{ section.class }}">
+    <div class="container">
+      <h3>{{ section.title }}</h3>
+      {{ section.content }}
+    </div>
+  </section>
+{% endfor %}

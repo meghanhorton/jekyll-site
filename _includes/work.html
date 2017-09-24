@@ -1,0 +1,29 @@
+{% for project in site.work %}
+
+{% capture thecycle %}{% cycle 'odd','even' %}{% endcapture %}
+
+{% capture col-title %}
+  <h3>{{ project.title }}</h3>
+  <h4 class="tags">{% include tags.html tags=project.tags %}</h4>
+  <p>{{ project.content }}</p>
+  <div class="btn-wrapper">
+    <a href="{{ project.url }}" class="btn btn-outline btn-inline" target="_blank">Visit site</a>
+  </div>
+{% endcapture %}
+
+{% capture col-img %}
+  <img class="img-responsive" src="{{ site.baseurl }}{{ project.img }}" alt="{{ project.title }}">
+{% endcapture %}
+
+<!-- project: {{ project.title }} -->
+<div class="row row-work">
+  <div class="col-sm-6{% if thecycle == 'even' %} push-sm-6{% endif %}">
+    {{ col-title }}
+  </div>
+  <div class="col-sm-6{% if thecycle == 'even' %} pull-sm-6{% endif %}">
+    {{ col-img }}
+  </div>
+</div>
+<!-- // project: {{ project.title }} -->
+{% endfor %}
+

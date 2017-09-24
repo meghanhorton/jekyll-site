@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body class="{% if page.class %}{{ page.class }}{% endif %}{% if page.header %} has-masthead{% endif %}{% if page.no-container %} has-masthead{% endif %}" data-click-category="{{ page.title }}">
+    <a href="#main" class="sr-only">Skip to main content</a>
+
+    <div class="main" id="main">
+      {{ content }}
+    </div>
+  </body>
+</html>
