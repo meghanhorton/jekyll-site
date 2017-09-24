@@ -3,7 +3,7 @@
 {% for section in sectionLoop %}
   <section id="{{ section.class }}">
     <div class="container">
-      <h3 class="text-center">{{ section.title }}</h3>
+      {% if hideTitle == true %}<h3 class="text-center">{{ section.title }}</h3>{% endif %}
       {{ section.content }}
     </div>
   </section>

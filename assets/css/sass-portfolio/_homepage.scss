@@ -70,7 +70,23 @@
           color: $color-secondary;
         }
       }
-      
+    }
+
+    // Contact
+    &#contact{
+      background: $color-primary;
+      color: $background-color;
+    }
+
+    // Footer
+    &#footer{
+      background: $gray-dark;
+      color: darken($gray-light,20%);
+      text-align: center;
+
+      a{
+        color: inherit;
+      }
     }
   }
 }

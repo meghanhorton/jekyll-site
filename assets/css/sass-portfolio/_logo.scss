@@ -1,0 +1,9 @@
+.logo{
+  display: block;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  background-color: $color-primary;
+  mask: url(../img/logo/mh.svg) no-repeat 50% 50%;
+  -webkit-mask: url(../img/logo/mh.svg) no-repeat 50% 50%;
+}
