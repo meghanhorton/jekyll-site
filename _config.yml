@@ -29,6 +29,7 @@ include: ["_pages","_pages/**/*"]
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 # Sass
 sass:
@@ -44,4 +45,8 @@ collections:
     output: false
   work: 
     output: false
+
+# Post Settings
+paginate: 2
+paginate_path: "/blog/:num/"
 

@@ -10,10 +10,11 @@
 // ******
 	
 	$background-color:             #FFFFFF !default;
-  $gray-dark:                    #333333 !default;
-	$gray-base:                    #212121 !default;
-	$gray-light:                   #EEEEEE !default;
-	$gray-lighter:                 darken(#FAFAFA,1%) !default;
+  $gray-darker:                  #000000 !default;
+  $gray-dark:                    lighten($gray-darker,25%) !default;
+	$gray-base:                    lighten($gray-dark,25%) !default;
+	$gray-light:                   lighten($gray-base,25%) !default;
+	$gray-lighter:                 lighten($gray-light,22.5%) !default;
 
 	$color-primary: 					     #7E57C2 !default;
   $color-secondary:              #FFC107!default;
@@ -52,7 +53,7 @@
 // *****
 
 	$font-family-base: 			       'Work Sans', sans-serif !default;
-
+  
 	$font-size-base: 			         $base*2 !default;
 	$font-size-small: 			       $base*1.5 !default;
 	$line-height-base:			       1.5 !default;

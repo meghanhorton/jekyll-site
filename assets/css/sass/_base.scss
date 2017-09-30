@@ -177,7 +177,7 @@ body{
 
 	a:not(.btn){
 		color: $link-color;
-	   	transition: color $transition-timing $transition-timing-function;
+	  transition: color $transition-timing $transition-timing-function;
 
 		@include underline($link-color,$link-underline-weight);
 

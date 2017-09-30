@@ -62,7 +62,7 @@
       }
 
       .tags{
-        color: lighten($gray-base,25%);
+        color: $gray-base;
 
         .tag:before{
           content: "\2022";

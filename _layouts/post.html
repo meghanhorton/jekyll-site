@@ -1,0 +1,22 @@
+---
+layout: default
+class: post
+---
+
+<article>
+  <header>
+    <div class="container">
+      <date>{{ page.date | date: '%B %d, %Y' }}</date>
+      <h1>{{ page.title }}</h1>
+      <h2 class="subtitle">{{ page.subtitle }}</h2>
+    </div>
+  </header>
+
+  {% include img.html item=page caption=true %}
+
+  <section class="body">
+    <div class="container">
+      {{ content }}
+    </div>
+  </section>
+</article>

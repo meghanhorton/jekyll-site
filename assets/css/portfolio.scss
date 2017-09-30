@@ -9,10 +9,13 @@
 @import 'sass/mixins';
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,600|Lora:400,400i,700,700i');
 
 // Variables
 @import 'sass/settings';
+
+  // Settings overrides
+  @import 'sass-portfolio/settings';
 
 // Includes
 @import 'sass/base';
@@ -28,4 +31,5 @@
 
 // PORTFOLIO
 @import 'sass-portfolio/homepage';
+@import 'sass-portfolio/posts';
 @import 'sass-portfolio/logo';
