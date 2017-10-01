@@ -1,0 +1,81 @@
+nav.navigation{
+  $nav-trigger-size: $base*3;
+  $nav-trigger-color: $gray-darker;
+  $nav-trigger-line-size: $border-width*2;
+
+  width: 100%;
+  position: relative;
+
+  // Menu Trigger
+  .nav-trigger{
+    
+
+    // Reset
+    border: 0;
+    box-shadow: none;
+
+    &:active,&:focus{
+      outline: none;
+    }
+
+    // For development
+    background: $gray-light;
+    height: $nav-trigger-size;
+    
+    // Styles
+    display: block;
+    position: relative;
+    float: right;
+    width: $nav-trigger-size;
+    overflow: hidden;
+
+    // Default Menu Icon
+    &:before,
+    &:after{
+      content: "";
+      background: transparent;
+      position: absolute;
+      box-sizing: border-box;
+      left: -25%;
+      right: -25%;
+      width: 150%;
+      border-color: transparent;
+      border-width: $nav-trigger-line-size;
+      border-style: solid;
+      transition: all $transition-timing $transition-timing-function;
+    }
+  
+    // Top two lines
+    &:before{
+      top: 0;
+      height: ($nav-trigger-size + $nav-trigger-line-size)/2;
+      border-top-color: $nav-trigger-color;
+      border-bottom-color: $nav-trigger-color;
+    }
+
+    // Bottom line
+    &:after{
+      bottom: 0;
+      border-bottom-color: $nav-trigger-color;
+      height: $nav-trigger-line-size;
+    }
+  }
+
+  &:hover{
+    .nav-trigger{
+      &:before{
+        transform: rotate(45deg);
+        transform-origin: $nav-trigger-line-size*1.5 #{$nav-trigger-line-size*2};
+        height: $nav-trigger-line-size;
+        border-bottom-color: transparent;
+      }
+
+      &:after{
+        top: 0;
+        transform-origin: #{$nav-trigger-size + $nav-trigger-line-size/2} #{$nav-trigger-line-size*2  + $nav-trigger-line-size/2}; 
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+}
