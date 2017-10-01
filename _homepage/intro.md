@@ -2,6 +2,7 @@
 title: Intro
 weight: 0
 class: intro
+hideTitle: true
 ---
 
 <div class="logo">
