@@ -11,16 +11,19 @@
 	
 	$background-color:             #FFFFFF !default;
   $gray-darker:                  #000000 !default;
-  $gray-dark:                    lighten($gray-darker,25%) !default;
-	$gray-base:                    lighten($gray-dark,25%) !default;
-	$gray-light:                   lighten($gray-base,25%) !default;
-	$gray-lighter:                 lighten($gray-light,22.5%) !default;
+  $gray-dark:                    lighten($gray-darker,40%) !default;
+	$gray-base:                    lighten($gray-dark,20%) !default;
+	$gray-light:                   lighten($gray-base,10%) !default;
+	$gray-lighter:                 lighten($gray-light,27.5%) !default;
 
 	$color-primary: 					     #7E57C2 !default;
   $color-secondary:              #FFC107!default;
 	$color-danger: 				         #F44336 !default;
 	$color-warning: 			         #FFC107 !default;
 	$color-success: 			         #8BC34A !default;
+
+  $selection-bg:                fade-out($color-primary,0.2) !default;
+  $selection-color:             #fff !default;
 
 	// LINK
 	$link-color:                   $color-primary !default;
@@ -56,6 +59,7 @@
   
 	$font-size-base: 			         $base*2 !default;
 	$font-size-small: 			       $base*1.5 !default;
+  $font-size-large:              $font-size-base * 1.5 !default;
 	$line-height-base:			       1.5 !default;
 	$font-weight-base: 			       300 !default;
 	$font-weight-bold: 			       600 !default;
@@ -187,6 +191,41 @@
     )
 	) !default;
 
+// *********
+// NAVIGATION
+// **********
+
+  // Trigger
+  $nav-trigger-width:           $font-size-base*1.5 !default; // 27px
+  $nav-trigger-weight:          $border-width !default; // 2px
+  $nav-trigger-spacing:         $base * 0.75 !default; // 9px
+  $nav-trigger-color:           $gray-darker !default;
+  $nav-trigger-open-bg:         #fff !default;
+  $nav-trigger-open-color:      $gray-darker !default;
+
+  // $nav-trigger-computed-height: $nav-trigger-width + $nav-trigger-spacing*2;
+
+  // Menu
+  $nav-menu-bg:                 fade-out($color-primary,0.05) !default;
+  $nav-menu-link-color:         #fff !default;
+  $nav-menu-font-family:        $font-family-base !default;
+  $nav-menu-font-size:          $font-size-base !default;
+
+// **********
+// PAGINATION
+// **********
+  
+  $pagination-color:            $gray-base !default;
+  $pagination-inactive-color:   $gray-light !default;
+  $pagination-hover-color:      $color-primary !default;
+
+  $pagination-separator-color:  lighten($gray-light,20%) !default;
+  $pagination-separator-weight: 1px !default;
+
+  $pagination-margin:           $margin-base !default;
+  $pagination-padding:          $padding-base !default;
+  $pagination-font-size:        $font-size-base !default;
+  
 // ******
 // TABLES
 // ******
