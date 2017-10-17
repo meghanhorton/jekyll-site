@@ -1,0 +1,6 @@
+title: Menu
+items: 
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog

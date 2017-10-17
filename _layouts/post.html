@@ -6,7 +6,7 @@ class: post
 <article>
   <header>
     <div class="container">
-      <date>{{ page.date | date: '%B %d, %Y' }}</date>
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %d, %Y' }}</time>
       <h1>{{ page.title }}</h1>
       <h2 class="subtitle">{{ page.subtitle }}</h2>
     </div>
@@ -14,7 +14,7 @@ class: post
 
   {% include img.html item=page caption=true %}
 
-  <section class="body">
+  <section aria-label="body" class="body">
     <div class="container">
       {{ content }}
     </div>

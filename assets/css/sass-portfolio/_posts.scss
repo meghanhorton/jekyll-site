@@ -16,7 +16,7 @@
       }
     }
 
-    date,.date{
+    time,.time{
       color: $color-primary;
     }
 
@@ -47,7 +47,7 @@
           font-family: $font-family-secondary;
           padding: 0;
           text-align: center;
-          color: $gray-base;
+          color: $gray-dark;
           border: 0;
         }
       }
@@ -74,12 +74,12 @@
 
 // POST AND POSTS
 .post, .posts{
-  date,.date{
+  time,.time{
     font-size: $font-size-small;
   }
 
   .subtitle{
-    color: $gray-base;
+    color: $gray-dark;
     font-weight: $font-weight-base;
     font-size: $font-size-h4;
   }

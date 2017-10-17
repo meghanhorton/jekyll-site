@@ -1,5 +1,25 @@
-<nav class="navigation open">
+<nav id="navigation" class="navigation">
+  <a class="sr-only" href="#main" aria-label="Skip to main content">Skip to main content</a>
+
   <div class="container">
-    <button class="nav-trigger"><span class="sr-only">Toggle Navigation</span></button>
+    <button id="nav-trigger" class="nav-trigger" aria-label="Toggle Navigation" data-target="#navigation">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </button>
+
+    <div class="nav-menu">
+      <h4>{{ site.data.nav.title }}</h4>
+      <ul class="nav-items">
+        {% for nav-item in site.data.nav.items %}
+          <li>
+            <a href="{{ site.baseurl }}{{ nav-item.url }}">
+              {{ nav-item.name }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </nav>
+

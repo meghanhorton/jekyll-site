@@ -3,12 +3,12 @@
   {% include head.html %}
 
   <body class="{{ layout.class }}{% if page.class %} {{ page.class }}{% endif %}" data-click-category="{{ page.title }}">
-    <a href="#main" class="sr-only">Skip to main content</a>
-
     {% include navigation.html %}
 
-    <div class="main" id="main">
+    <main class="main" id="main">
       {{ content }}
-    </div>
+    </main>
+
+    {% include foot.html %}
   </body>
 </html>

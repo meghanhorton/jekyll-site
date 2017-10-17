@@ -1,9 +1,9 @@
 {% assign sectionLoop =  site.homepage | sort: 'weight' %}
 
 {% for section in sectionLoop %}
-  <section id="{{ section.class }}" class="{{ section.class }}">
+  <section id="{{ section.class }}" class="{{ section.class }}" aria-label="{{ section.title }}">
     <div class="container">
-      {% if section.hideTitle != true %}<h3 class="text-center">{{ section.title }}</h3>{% endif %}
+      {% if section.hideTitle != true %}<h2 class="text-center">{{ section.title }}</h2>{% endif %}
       {{ section.content }}
     </div>
   </section>

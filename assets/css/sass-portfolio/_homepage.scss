@@ -43,6 +43,10 @@
     &#work{
       background: $gray-lighter;
 
+      a{
+        text-shadow: -#{$border-width} $border-width 0px $gray-lighter, $border-width $border-width 0px $gray-lighter;
+      }
+
       &, div:not(.row.row-work){
         h1,h2,h3,h4,h5,h6{
           text-align: center;
@@ -62,7 +66,7 @@
       }
 
       .tags{
-        color: $gray-base;
+        color: $gray-dark;
 
         .tag:before{
           content: "\2022";
@@ -80,8 +84,8 @@
 
     // Footer
     &#footer{
-      background: $gray-dark;
-      color: darken($gray-light,20%);
+      background: lighten($gray-darker,10%);
+      color: $gray-light;
       text-align: center;
 
       a{
