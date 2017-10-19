@@ -3,6 +3,7 @@
     init: function(){
       // Initialize all functions
       portfolio.nav.init();
+      portfolio.modal.init();
     }
   },
   portfolio.nav = {
@@ -28,6 +29,42 @@
       // Toggles nav class between open and not
       el.classList.toggle("open");
     }
+  },
+  portfolio.modal = {
+    init: function(){
+      portfolio.modal.eventActions('button#openContact');
+      portfolio.modal.closeModal();
+    },
+    eventActions(el){
+      var el = document.querySelector(el);
+
+      // On click
+      el.addEventListener('click', function(e) {
+        // Triggers modal
+        portfolio.modal.triggerModal(el);
+      });
+    },
+    triggerModal: function(el){
+      var target = document.querySelector(el.getAttribute('data-target'));
+
+      target.classList.add("dialog--open");
+      target.classList.remove("dialog--close");
+    },
+    closeModal: function(){
+      var targets = document.querySelectorAll('.dialog');
+
+      // Loop through each modal
+      targets.forEach(function(el){
+        var closeButton = el.querySelector('[data-dialog-close]');
+
+        // For each close button, apply an event listener to trigger classes
+        closeButton.addEventListener('click',function(e){
+          el.classList.remove("dialog--open");
+          el.classList.add("dialog--close");
+        });
+      });
+    }
+
   }
 
   // Run portfolio

@@ -34,7 +34,7 @@ plugins:
 # Sass
 sass:
   sass_dir:         assets/css/
-  style:            compressed
+  # style:            compressed
 
 # Live reload
 livereload: true
