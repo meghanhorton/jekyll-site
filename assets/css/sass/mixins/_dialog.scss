@@ -1,0 +1,31 @@
+// *************
+// DIALOG/MODALS
+// *************
+
+  // For each breakpoint, set the size of the modal
+  @mixin dialog-breakpoints($dialog: $dialog-size-variants) {
+    @each $breakpoint in map-keys($dialog) {
+      // Set base properties
+      @if $breakpoint == 'default' {
+        /* no breakpoint */
+        @include dialog-loop-properties($dialog,$breakpoint);
+        /* end no breakpoint */
+
+      // Set properties for screen sizes
+      } @else{
+        /* breakpoint up should start here */
+        @include media-breakpoint-up($breakpoint) {
+          @include dialog-loop-properties($dialog,$breakpoint);
+        }
+        /* breakpoint up should end here */
+      }
+    }
+  }
+
+  // Loop through dialog properties
+  @mixin dialog-loop-properties($dialog,$breakpoint){
+    $properties: map-get($dialog, $breakpoint);
+    @each $key, $value in $properties{
+      #{$key}: #{$value};
+    }
+  }

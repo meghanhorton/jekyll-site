@@ -191,19 +191,18 @@
     )
 	) !default;
 
+
 // *********
 // NAVIGATION
 // **********
 
   // Trigger
-  $nav-trigger-width:           $font-size-base*1.5 !default; // 27px
+  $nav-trigger-width:           $font-size-base *1.5 !default; // 27px
   $nav-trigger-weight:          $border-width !default; // 2px
   $nav-trigger-spacing:         $base * 0.75 !default; // 9px
   $nav-trigger-color:           $gray-darker !default;
   $nav-trigger-open-bg:         #fff !default;
   $nav-trigger-open-color:      $gray-darker !default;
-
-  // $nav-trigger-computed-height: $nav-trigger-width + $nav-trigger-spacing*2;
 
   // Menu
   $nav-menu-bg:                 fade-out($color-primary,0.05) !default;
@@ -284,3 +283,28 @@
 
 	$transition-timing: 			0.5s;
 	$transition-timing-function: 	cubic-bezier(0.4, 0.0, 0.2, 1); 
+
+// ******
+// MODALS
+// ******
+  
+  $dialog-bg:                  $background-color !default;
+  $dialog-size-variants: (
+    xs: (
+      width: 95%,
+      padding: $padding-large
+    ),
+    lg: (
+      width: 50%,
+      padding: $padding-large,
+      max-width: map-get($container-max-widths,sm)
+    )
+  );
+
+// *******
+// Z-INDEX
+// *******
+
+  $z-nav-trigger:     5000 !default;
+  $z-nav-menu:        4000 !default;
+  $z-dialog:          6000 !default;

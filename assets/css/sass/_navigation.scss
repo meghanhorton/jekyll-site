@@ -12,8 +12,8 @@ nav.navigation{
   }
 
   // Set Z-Index
-  .nav-menu{    z-index: 4000; }
-  .nav-trigger{ z-index: 5000; }
+  .nav-menu{    z-index: $z-nav-menu; }
+  .nav-trigger{ z-index: $z-nav-trigger; }
 
   // Nav Menu
   .nav-menu{
