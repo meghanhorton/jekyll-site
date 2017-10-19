@@ -4,4 +4,4 @@ weight: 6
 class: posts
 ---
 
-{% include posts_loop.html limit=2 %}
+{% include loops/posts.html limit=2 %}
