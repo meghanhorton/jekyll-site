@@ -1,6 +1,70 @@
-<div id="contactDialog" class="dialog">
+<div id="contactDialog" class="dialog dialog--open">
   <div class="dialog__overlay"></div>
   <div class="dialog__content">
-    <h2><strong>Howdy</strong>, I'm a dialog box</h2><div><button class="action" data-dialog-close>Close</button></div>
+    <div class="dialog__header">
+      <button class="btn btn-close" data-dialog-close aria-label="Close dialog">
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+      <h2>Contact Meghan</h2>
+    </div>
+    <div class="dialog__body">
+      <div id="dialog__response"></div>
+      <form id="contactForm">
+        <div class="form-group">
+          <label class="form-label" for="name">Name</label>
+          <input type="text" name="name" placeholder="First Last">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="fromEmail">Email address</label>
+          <input type="email" name="fromEmail" placeholder="awesome.sauce@email.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Message</label>
+          <textarea name="message" placeholder="Leave me a note." rows="4"></textarea>
+        </div>
+        <button class="btn btn-solid btn-inline" type="submit" name="submit">Send it</button>
+      </form>
+    </div>
   </div>
 </div>
+
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+<script>
+  function preprocessForm(form,subject,email){
+    var formData = new Object(),
+        message = 
+          'From: ' + $(form + " [name='name']").val() + ': ' 
+          $(form + " [name='fromEmail']").val() + '\r\n',
+        message += 'Message: ' + $(form + " [name='message']").val(),
+        formData.email = email,
+        formData.subject = subject,
+        formData.message = message;
+
+    return JSON.stringify(formData);
+  }
+  
+  $(document).ready(function(){
+    $("#contactForm").submit(function(event){
+      event.preventDefault();
+      $.ajax({
+        url: "https://11qceuag03.execute-api.us-east-1.amazonaws.com/dev/ContactFormLambda",
+        contentType: "application/json; charset=utf-8",
+        method: "POST",
+        dataType: "text",
+        accepts: "application/json",
+        processData: false,
+        data: preprocessForm("form#contactForm",'Submission from meghanhorton.com','meghan.leigh.horton@gmail.com'),
+        success: function(){
+          $('#dialog__response').html("<h2>Success! You'll be hearing from me soon.</h2>");
+          $('#contactForm').hide();
+        },
+        error: function(){
+          $('#dialog__response').html("<h2>Uhoh. Something went wrong</h2>");
+        }
+      });
+    });
+  });
+</script>
