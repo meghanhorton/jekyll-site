@@ -4,8 +4,71 @@
       // Initialize all functions
       portfolio.nav.init();
       portfolio.modal.init();
+      portfolio.logo.init();
     }
   },
+  portfolio.logo = {
+    init: function(){
+      portfolio.logo.triggerLogo('.nav-brand');
+    },
+    triggerLogo(target){
+      var el = document.querySelector(target),
+          bod = document.getElementsByTagName('body')[0];
+
+      console.log(el);
+
+      // On hover
+      el.addEventListener("mouseenter", function(){portfolio.logo.fadeIn(bod,el)} );
+      
+      // On focus
+      el.addEventListener("focus", function(){portfolio.logo.fadeIn(bod,el)} );
+
+      // On mouseout
+      el.addEventListener("mouseleave", function(){portfolio.logo.fadeOut(bod,el)} );
+
+      // On mouseout
+      el.addEventListener("focusout", function(){portfolio.logo.fadeOut(bod,el)} );
+    },
+    fadeIn(bod,target){
+      console.log(bod.classList,'fadeIn');
+      bod.classList.remove('logoFadeOut');
+      bod.classList.add('logoFadeIn');
+    },
+    fadeOut(bod,target){
+      console.log(bod.classList,'fadeOut');
+      bod.classList.remove('logoFadeIn');
+      bod.classList.add('logoFadeOut');
+    }
+  },
+  // portfolio.altText = {
+  //   init: function(){
+  //     portfolio.altText.getTargets('data-array',500,5000);
+  //   },
+  //   getTargets(attr,timing,pause){
+  //     var targets = document.querySelectorAll('['+attr+']');
+
+  //     targets.forEach(function(el){
+  //       var array = el.getAttribute('data-array'),
+  //           array = array.split(','),
+  //           count = array.length,
+  //           initial = el.innerHTML.length;
+
+  //       $(el).typeIt({
+  //         lifeLike: true,
+  //         loop: true,
+  //         speed: timing
+  //       });
+
+  //       // Delete initial entry
+  //       $(el).tiPause(pause).tiDelete( initial );
+
+  //       // Loop through array to type, then delete.
+  //       $(array).each(function(index,term){
+  //         $(el).tiType(term).tiPause(pause).tiDelete(term.length);
+  //       });
+  //     });
+  //   }
+  // },
   portfolio.nav = {
     init: function(){
       // When #nav-trigger is clicked, perform actions
@@ -64,7 +127,6 @@
         });
       });
     }
-
   }
 
   // Run portfolio

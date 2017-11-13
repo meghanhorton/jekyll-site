@@ -1,9 +1,126 @@
-.logo{
+// Base logo dimensions, to scale appropriately
+$logo-height: 96.29; $logo-height-prop: ($nav-trigger-width/1px)/$logo-height;
+$logo-g-drop: 122.83; $logo-drop-prop: $logo-g-drop/$logo-height;
+$logo-padding-bottom: $logo-height - $logo-g-drop;
+$logo-width-collapsed: 181.57; $logo-width-collapsed-prop: $logo-width-collapsed/$logo-height;
+$logo-width-expanded: 973.91; $logo-width-expanded-prop: $logo-width-expanded/$logo-height;
+
+// SVG VARIABLES
+$timing: 0.05; // timing between letters
+$delay: $timing; // start delay
+$total_letters: 12; // total number of letters 
+$total_animation: $timing*$total_letters; // length of total animation
+$meghan_width: 434.2px;
+$horton_width: 348.2px;
+
+$meghan: ('meghan_m','meghan_e','meghan_g','meghan_h','meghan_a','meghan_n');
+$horton: ('horton_o','horton_r','horton_t','horton_o2','horton_n');
+
+// **********
+// BRAND LINK
+// **********
+a.nav-brand{
   display: block;
-  height: 100px;
-  width: 100px;
-  margin: 0 auto;
-  background-color: $color-primary;
-  mask: url(../img/logo/mh.svg) no-repeat 50% 50%;
-  -webkit-mask: url(../img/logo/mh.svg) no-repeat 50% 50%;
+  box-sizing: content-box;
+  padding: $nav-trigger-spacing;
+  height: $nav-trigger-width;
+  width: $nav-trigger-width * $logo-width-collapsed-prop;
+  overflow: hidden;
+  margin: 0 auto 0 0;
+  transition: width #{$total_letters*$timing}s linear;
+
+  .logoFadeIn &{
+    width: $nav-trigger-width * $logo-width-expanded-prop;
+  }
+
+  &:after{
+    display: none!important;
+  }
 }
+
+// ***
+// SVG
+// ***
+
+  // MIXINS
+  @mixin animationCreate($letter,$delay){
+    .logoFadeIn & ##{$letter}{
+        animation-delay: #{$delay}s;
+    }
+
+    .logoFadeOut & ##{$letter}{
+        animation-delay: #{$total_animation - $delay}s;
+    }
+  }
+
+  // KEYFRAMES
+    // Fade in letters
+    @keyframes fadeLetter{
+      0%{ opacity: 0;}
+      100%{ opacity: 1;}
+    }
+
+    // Move H
+    @keyframes moveH{
+        0%{ transform: translateX(-$meghan_width); }
+        100%{ transform: translateX(0); }
+    }
+  
+#MHlogo{
+  height: $nav-trigger-width*$logo-drop-prop;
+
+  // Set default for animated letters
+  path{
+    fill: $color-primary;
+  }
+
+  .meghan path, .horton path{
+      opacity: 0;
+  }
+
+  #H{
+      transform: translateX(-#{$meghan_width});
+  }
+
+  // FADE IN
+  .logoFadeIn & {
+    .meghan path, .horton path{
+      opacity: 0;
+      animation: fadeLetter #{$timing}s linear forwards;
+    }
+  }
+
+  // FADE OUT
+  .logoFadeOut &{
+    .meghan path, .horton path, #H{
+      animation: fadeLetter #{$timing}s linear reverse backwards;
+    }
+  }
+  
+  // LETTERS
+    // Step 1:
+    // Loop through Meghan Letters
+    @each $letter in $meghan {   
+        @include animationCreate($letter,$delay);
+        $delay: $delay+$timing;
+    }
+
+    // Step 2:
+    // Move Capital H
+    .logoFadeIn & #H{
+      animation: moveH #{$delay}s linear forwards;
+    }
+
+    .logoFadeOut & #H{
+      animation: moveH #{$delay}s linear reverse backwards;
+      animation-delay: #{$total_animation - $delay + $timing}s;
+    }
+
+    // Step 3:
+    // Loop through Horton Letters
+    @each $letter in $horton {   
+        @include animationCreate($letter,$delay);
+        $delay: $delay+$timing;
+    }
+}
+

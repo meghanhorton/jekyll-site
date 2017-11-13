@@ -129,9 +129,9 @@ nav.navigation{
   }
 
   // For mobile
-  @include media-breakpoint-up('xs'){
+  @include media-breakpoint-up('sm'){
     .nav-trigger{
-      margin: -#{$nav-trigger-spacing};
+      margin: 0 -#{$nav-trigger-spacing};
     }
   }
 }

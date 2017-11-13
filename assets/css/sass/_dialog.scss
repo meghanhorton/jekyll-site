@@ -36,12 +36,25 @@ $prefix: 'dialog';
 }
 
 .#{$prefix}__content {
+  overflow-y: scroll;
+  
   @include dialog-breakpoints();
   background: $dialog-bg;
-  text-align: center;
   position: relative;
   z-index: $z-dialog;
   opacity: 0;
+
+  .#{$prefix}__header {
+    position: relative;
+    padding-right: $nav-trigger-width + $base*4;
+
+    .btn-close{
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 0;
+    }
+  }
 }
 
 // OPEN AND CLOSE

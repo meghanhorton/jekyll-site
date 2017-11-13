@@ -5,8 +5,8 @@ class: intro
 hideTitle: true
 ---
 
-<div class="logo">
+<!-- <div class="logo">
   <h1 class="sr-only">Meghan Horton | Portfolio</h1>
-</div>
+</div> -->
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam repellendus aperiam quibusdam, deserunt unde voluptatem doloremque adipisci vitae similique enim, dicta mollitia suscipit est soluta.
+I'm Meghan, a <span class="role">designer</span> who loves to <span class="role">code</span>, or a coder who loves to design. I design and develop with the user in mind.

@@ -41,5 +41,35 @@ a,input[type="button"],button{
 		&.btn-inline{
 			display: inline-block;
 		}
+
+		// Circle
+		&.btn-close{
+			border-radius: 50%;
+			padding: $base/2;
+			box-sizing: content-box;
+			height: $nav-trigger-width;
+			width: $nav-trigger-width;
+
+			.line{
+	      width: $nav-trigger-width;
+	      height: $nav-trigger-weight;
+	      background-color: $color-primary;
+	      display: block;
+
+	      &:nth-child(1){
+          -webkit-transform: translateY(#{$nav-trigger-weight/2}) rotate(45deg);
+          -ms-transform: translateY(#{$nav-trigger-weight/2}) rotate(45deg);
+          -o-transform: translateY(#{$nav-trigger-weight/2}) rotate(45deg);
+          transform: translateY(#{$nav-trigger-weight/2}) rotate(45deg);
+        }
+
+        &:nth-child(2){
+          -webkit-transform: translateY(-#{$nav-trigger-weight/2}) rotate(-45deg);
+          -ms-transform: translateY(-#{$nav-trigger-weight/2}) rotate(-45deg);
+          -o-transform: translateY(-#{$nav-trigger-weight/2}) rotate(-45deg);
+          transform: translateY(-#{$nav-trigger-weight/2}) rotate(-45deg);
+        }
+	    }
+		}
 	}
 }

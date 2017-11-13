@@ -6,6 +6,15 @@
   section{
     padding: $margin-large;
 
+    // Intro
+    &#intro{
+      p{
+        font-size: $font-size-large;
+        font-family: $font-family-secondary;
+        text-align: center;
+      }
+    }
+
     // Expertise
     &#expertise{
       h1,h2,h3,h4,h5,h6{

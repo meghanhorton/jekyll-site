@@ -294,10 +294,11 @@
       width: 95%,
       padding: $padding-large
     ),
+    md: (
+      width: map-get($container-max-widths,md)
+    ),
     lg: (
-      width: 50%,
-      padding: $padding-large,
-      max-width: map-get($container-max-widths,sm)
+      width: map-get($container-max-widths,lg)
     )
   );
 
