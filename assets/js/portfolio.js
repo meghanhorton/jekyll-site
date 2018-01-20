@@ -9,66 +9,45 @@
   },
   portfolio.logo = {
     init: function(){
-      portfolio.logo.triggerLogo('.nav-brand');
+      var letters = {
+          meghan_m: false, // false: opacity only
+          meghan_e: false,
+          meghan_g: false,
+          meghan_h: false,
+          meghan_a: false,
+          meghan_n: false,
+          horton_H: 'translateX', // class to be added
+          horton_o: false,
+          horton_r: false,
+          horton_t: false,
+          horton_o2: false,
+          horton_n: false
+        };
+
+      portfolio.logo.expandLogo('svg#MHlogo',0.5);
     },
-    triggerLogo(target){
-      var el = document.querySelector(target),
-          bod = document.getElementsByTagName('body')[0];
+    expandLogo(target,timing){
+      var target = document.querySelector(target);
+      target.classList.add('expanded');
+      // var i = 0;
 
-      console.log(el);
-
-      // On hover
-      el.addEventListener("mouseenter", function(){portfolio.logo.fadeIn(bod,el)} );
-      
-      // On focus
-      el.addEventListener("focus", function(){portfolio.logo.fadeIn(bod,el)} );
-
-      // On mouseout
-      el.addEventListener("mouseleave", function(){portfolio.logo.fadeOut(bod,el)} );
-
-      // On mouseout
-      el.addEventListener("focusout", function(){portfolio.logo.fadeOut(bod,el)} );
-    },
-    fadeIn(bod,target){
-      console.log(bod.classList,'fadeIn');
-      bod.classList.remove('logoFadeOut');
-      bod.classList.add('logoFadeIn');
-    },
-    fadeOut(bod,target){
-      console.log(bod.classList,'fadeOut');
-      bod.classList.remove('logoFadeIn');
-      bod.classList.add('logoFadeOut');
+      // for (var key in target){
+      //   var id = '#'+key,
+      //       action = target[key],
+      //       delay = Math.round(timing * i * 1000);
+        
+      //   if(action == false){
+      //     console.log(id,delay);
+      //     $(id).fadeIn();
+      //   } else{
+      //     document.getElementById(key).classList.add(action); //jQuery is being a jerk
+      //   }
+        
+      //   // Up count
+      //   i++;
+      // }
     }
   },
-  // portfolio.altText = {
-  //   init: function(){
-  //     portfolio.altText.getTargets('data-array',500,5000);
-  //   },
-  //   getTargets(attr,timing,pause){
-  //     var targets = document.querySelectorAll('['+attr+']');
-
-  //     targets.forEach(function(el){
-  //       var array = el.getAttribute('data-array'),
-  //           array = array.split(','),
-  //           count = array.length,
-  //           initial = el.innerHTML.length;
-
-  //       $(el).typeIt({
-  //         lifeLike: true,
-  //         loop: true,
-  //         speed: timing
-  //       });
-
-  //       // Delete initial entry
-  //       $(el).tiPause(pause).tiDelete( initial );
-
-  //       // Loop through array to type, then delete.
-  //       $(array).each(function(index,term){
-  //         $(el).tiType(term).tiPause(pause).tiDelete(term.length);
-  //       });
-  //     });
-  //   }
-  // },
   portfolio.nav = {
     init: function(){
       // When #nav-trigger is clicked, perform actions

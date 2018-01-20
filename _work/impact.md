@@ -13,4 +13,4 @@ tags:
 url: http://nyc.cornell.edu/impact
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla repudiandae, earum fugiat, in magni consequuntur voluptates cum, adipisci, molestias quis officiis doloremque officia vitae consequatur?
+To exemplify Cornell's initiatives in New York City, a multi-media campaign, including print, video, and web, was launched to demonstrate the impact of Cornellians on NYC.

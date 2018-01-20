@@ -14,4 +14,4 @@ tags:
 url: http://news.cornell.edu
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla repudiandae, earum fugiat, in magni consequuntur voluptates cum, adipisci, molestias quis officiis doloremque officia vitae consequatur?
+Designed with the user in mind, the new Chronicle experience provides readers with more lateral movement across the site to discover more relevant articles and puts the emphasis on content.

@@ -15,4 +15,4 @@ tags:
 url: http://brand.cornell.edu
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla repudiandae, earum fugiat, in magni consequuntur voluptates cum, adipisci, molestias quis officiis doloremque officia vitae consequatur?
+Setting the standard for brand usage across campus, this overhaul tackled the brand guidelines as much as the site design.

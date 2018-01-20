@@ -52,7 +52,7 @@
     &#work{
       background: $gray-lighter;
 
-      a{
+      a:not(.btn){
         text-shadow: -#{$border-width} $border-width 0px $gray-lighter, $border-width $border-width 0px $gray-lighter;
       }
 

@@ -12,4 +12,4 @@ tags:
 url: http://cornell.edu/visit/plan
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla repudiandae, earum fugiat, in magni consequuntur voluptates cum, adipisci, molestias quis officiis doloremque officia vitae consequatur?
+Since it's launch, over 70,000 visitors have used the "itinerary builder" to plan a customized visit on campus. This <a href="http://www.case.org/Awards/Circle_of_Excellence/About_COE/Previous_Winners/2015_Winners/Websites_2015.html" target="_blank">award-winning tool</a> has paved the way for countless other event-management opportunities on campus.
