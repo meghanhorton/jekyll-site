@@ -56,6 +56,10 @@
 }
 
 .posts{
+  .posts-wrapper{
+    margin: split-values($margin-large,vertical) auto;
+  }
+
   .row-post{
     h1,h2,h3,h4,h5,h6{
       margin-top: 0;

@@ -44,7 +44,17 @@ collections:
   homepage:
     output: false
   work: 
-    output: false
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      type: "work"
+    values:
+      layout: "work"
+
+# Excerpt
+excerpt_separator: "<!--break-->"
 
 # Post Settings
 paginate: 2

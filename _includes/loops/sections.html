@@ -4,7 +4,7 @@
   <section id="{{ section.class }}" class="{{ section.class }}" aria-label="{{ section.title }}">
     <div class="container">
       {% if section.hideTitle != true %}<h2 class="text-center">{{ section.title }}</h2>{% endif %}
-      {{ section.content }}
+      {{ section.excerpt }}
     </div>
   </section>
 {% endfor %}

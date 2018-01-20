@@ -3,7 +3,7 @@ layout: post
 title:  "Reinventing the wheel"
 subtitle: "No, I'm not <em>that</em> crazy."
 img: 
-  src: "reinvent-the-wheel/gears.jpg"
+  src: "/assets/img/posts/reinvent-the-wheel/gears.jpg"
   alt: "Gears"
 date:   2017-09-24 00:00:00 -0600
 tags: 

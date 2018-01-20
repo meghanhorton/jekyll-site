@@ -3,7 +3,7 @@
 
 {% if item.img.src %}
   {% capture img %}
-    <img class="img-responsive" src="{{ site.baseurl }}/assets/img/posts/{{ item.img.src }}" alt="{{ item.img.alt }}">
+    <img class="img-responsive" src="{{ site.baseurl }}{{ item.img.src }}" alt="{{ item.img.alt }}">
   {% endcapture %}
 {% elsif include.placeholder == true %}
   {% capture img %}

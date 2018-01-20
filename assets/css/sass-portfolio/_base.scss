@@ -1,0 +1,11 @@
+// Footer
+.footer{
+  background: lighten($gray-darker,10%);
+  color: $gray-light;
+  text-align: center;
+  padding: $margin-large;
+
+  a{
+    color: inherit;
+  }
+}

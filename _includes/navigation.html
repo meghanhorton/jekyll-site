@@ -4,7 +4,7 @@
   <div class="container">
     <a class="nav-brand" title="Meghan Horton" aria-label="Meghan Horton">
       {% include svg/meghanhorton.svg %}
-      <h1 class="sr-only">Meghan Horton | Portfolio</h1>
+      <span class="sr-only">Meghan Horton | Portfolio</span>
     </a>
 
     <button id="nav-trigger" class="nav-trigger" aria-label="Toggle Navigation" data-target="#navigation">
@@ -14,7 +14,7 @@
     </button>
 
     <div class="nav-menu">
-      <h4>{{ site.data.nav.title }}</h4>
+      <span class="h4">{{ site.data.nav.title }}</span>
       <ul class="nav-items">
         {% for nav-item in site.data.nav.items %}
           <li>

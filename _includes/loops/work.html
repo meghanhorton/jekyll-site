@@ -15,7 +15,7 @@
 
 {% capture col-img %}
   <a class="img" href="{{ project.url }}" target="_blank" aria-label="Image linking to {{ project.title }}" aria-hidden="true">
-    <img class="img-responsive" src="{{ site.baseurl }}{{ project.img }}" alt="{{ project.title }}">
+    <img class="img-responsive" src="{{ site.baseurl }}{{ project.img.src }}" alt="{{ project.img.alt }}">
   </a>
 {% endcapture %}
 
