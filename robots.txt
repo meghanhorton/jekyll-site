@@ -1,0 +1,4 @@
+#Remove this upon launch 
+
+User-agent: *
+Disallow: /
