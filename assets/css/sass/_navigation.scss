@@ -51,6 +51,16 @@ nav.navigation{
         &:after{
           display: none;
         }
+
+        &:hover{
+          color: $nav-menu-active-link-color;
+        }
+      }
+    }
+
+    li.active{
+      &,a,a:visited{
+        color: $nav-menu-active-link-color;
       }
     }
   }

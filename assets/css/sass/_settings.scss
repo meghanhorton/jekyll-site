@@ -206,7 +206,9 @@
 
   // Menu
   $nav-menu-bg:                 fade-out($color-primary,0.05) !default;
-  $nav-menu-link-color:         #fff !default;
+	$nav-menu-link-color:         fade-out(#fff,0.5) !default;
+	$nav-menu-active-link-color: 	#fff !default;
+	$nav-menu-hover-link-color: 	#fff !default;
   $nav-menu-font-family:        $font-family-base !default;
   $nav-menu-font-size:          $font-size-base !default;
 
