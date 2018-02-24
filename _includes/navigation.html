@@ -18,7 +18,9 @@
       <ul class="nav-items">
         {% for nav-item in site.data.nav.items %}
           <li {% if page.url == nav-item.url %}class="active"{% endif %}>
-            <a href="{{ site.baseurl }}{{ nav-item.url }}" {% if nav-item.aria-label %}aria-label="{{ nav-item.aria-label }}"{% endif %}>
+            <a href="{{ site.baseurl }}{{ nav-item.url }}" 
+              {% if nav-item.aria-label %}aria-label="{{ nav-item.aria-label }}"{% endif %}
+              {% if nav-item.data-target %}data-target="{{ nav-item.data-target }}"{% endif %}>
               {{ nav-item.name }}
             </a>
           </li>
