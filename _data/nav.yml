@@ -1,8 +1,9 @@
 title: Menu
 items: 
-  - name: Home
+  - name: Meghan Horton
+    aria-label: Home
     url: /
-  - name: Blog
-    url: /blog
   - name: Work
     url: /work
+  - name: Thoughts
+    url: /thoughts

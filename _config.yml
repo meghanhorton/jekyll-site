@@ -13,7 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Portfolio
+title: "Meghan Horton | Front-end, web design, and user experience"
+location: "Raleigh, North Carolina"
 email: meghan.leigh.horton@gmail.com
 description: Meghan Horton is a web designer, front-end developer, and user interface designer based in Raleigh, North Carolina.
 baseurl: "" # the subpath of your site, e.g. /blog

@@ -4,7 +4,7 @@
   <div class="container">
     <a class="nav-brand" title="Meghan Horton" aria-label="Meghan Horton" href="{{ site.baseurl }}/">
       {% include svg/meghanhorton.svg %}
-      <span class="sr-only">Meghan Horton | Portfolio</span>
+      <span class="sr-only">Meghan Horton</span>
     </a>
 
     <button id="nav-trigger" class="nav-trigger" aria-label="Toggle Navigation" data-target="#navigation">
@@ -17,8 +17,8 @@
       <!-- <span class="h4">{{ site.data.nav.title }}</span> -->
       <ul class="nav-items">
         {% for nav-item in site.data.nav.items %}
-          <li>
-            <a href="{{ site.baseurl }}{{ nav-item.url }}">
+          <li {% if page.url == nav-item.url %}class="active"{% endif %}>
+            <a href="{{ site.baseurl }}{{ nav-item.url }}" {% if nav-item.aria-label %}aria-label="{{ nav-item.aria-label }}"{% endif %}>
               {{ nav-item.name }}
             </a>
           </li>
