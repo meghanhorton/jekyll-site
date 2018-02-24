@@ -145,3 +145,8 @@ nav.navigation{
     }
   }
 }
+
+// Open Modal
+body.dialog-activated .nav-trigger{
+  display: none;
+}
