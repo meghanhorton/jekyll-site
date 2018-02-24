@@ -7,3 +7,6 @@ items:
     url: /work
   - name: Thoughts
     url: /thoughts
+  - name: Contact
+    url: /#contactDialog
+    data-target: "#contactDialog"

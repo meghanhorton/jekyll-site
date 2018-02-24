@@ -54,17 +54,27 @@
       portfolio.nav.onClick('button#nav-trigger');
     },
     onClick: function(el){
-      var el = document.querySelector(el);
+      var el = document.querySelector(el),
+          nav = el.getAttribute('data-target');
 
       // Add click event listener for navigational element
       el.addEventListener('click', function(e) {
         // Gets target
-        var target = document.querySelector(el.getAttribute('data-target'));
+        var target = document.querySelector(nav);
 
         e.preventDefault();
 
         // Toggles class on parent element (open/not open)
         portfolio.nav.toggleNavClass(target);
+      });
+
+      // Close the nav when an element is clicked
+      document.querySelector(nav + ' .nav-menu').querySelectorAll("a").forEach(function(e){
+        var target = document.querySelector(nav);
+
+        e.addEventListener('click', function(e){
+          target.classList.remove("open");
+        })
       });
     },
     toggleNavClass: function(el){
@@ -74,23 +84,38 @@
   },
   portfolio.modal = {
     init: function(){
-      portfolio.modal.eventActions('button#openContact');
+      portfolio.modal.eventActions('#contactDialog');
       portfolio.modal.closeModal();
     },
     eventActions(el){
-      var el = document.querySelector(el);
+      var modal = document.querySelector(el);
+    
+      // If this is a page that contains this modal, do the following
+      if(modal != null){
+        var trigger = document.querySelectorAll('[data-target="'+el+'"]');
 
-      // On click
-      el.addEventListener('click', function(e) {
-        // Triggers modal
-        portfolio.modal.triggerModal(el);
-      });
+        // Trigger for every element on the page that targets it
+        trigger.forEach(function(target){
+          target.addEventListener('click', function(e) {
+            // Triggers modal
+            var id = target.getAttribute('data-target');
+
+            portfolio.modal.triggerModal(id);
+          });
+        });
+
+        // If the page is loaded with the hash in the URL, open it!
+        if(window.location.hash == el){
+          portfolio.modal.triggerModal(el);
+        }
+      }
     },
     triggerModal: function(el){
-      var target = document.querySelector(el.getAttribute('data-target'));
+      var target = document.querySelector(el);
 
       target.classList.add("dialog--open");
       target.classList.remove("dialog--close");
+      document.querySelector('body').classList.add("dialog-activated");
     },
     closeModal: function(){
       var targets = document.querySelectorAll('.dialog');
@@ -103,6 +128,7 @@
         closeButton.addEventListener('click',function(e){
           el.classList.remove("dialog--open");
           el.classList.add("dialog--close");
+          document.querySelector('body').classList.remove("dialog-activated");
         });
       });
     }
