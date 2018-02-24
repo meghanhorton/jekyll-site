@@ -57,6 +57,6 @@ defaults:
 excerpt_separator: "<!--break-->"
 
 # Post Settings
-paginate: 2
-paginate_path: "/blog/:num/"
+# paginate: 2
+# paginate_path: "/blog/:num/"
 

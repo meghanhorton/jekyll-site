@@ -1,7 +1,7 @@
 {% if include.limit %}
   {% assign postLoop = site.posts | limit: include.limit %}
 {% else %}
-  {% assign postLoop = paginator.posts %}
+  {% assign postLoop = site.posts %}
 {% endif %}
 
 <div class="row row-post">
@@ -14,7 +14,3 @@
     </div>
   {% endfor %}
 </div>
-
-{% if include.pagination %}
-  {% include pagination.html %}
-{% endif %}
