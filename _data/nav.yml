@@ -4,3 +4,5 @@ items:
     url: /
   - name: Blog
     url: /blog
+  - name: Work
+    url: /work
