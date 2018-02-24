@@ -6,7 +6,7 @@ class: brand
 img: 
   src: /assets/img/mockups/brand.png
   alt: "The Cornell University Brand website on a laptop and mobile device."
-cta: "Visit site"
+cta: "How do you brand a brand site?"
 tags:
   - "UX/UI"
   - "Design"

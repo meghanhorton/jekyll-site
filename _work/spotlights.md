@@ -6,7 +6,7 @@ class: spotlights
 img: 
   src: /assets/img/mockups/spotlights.png
   alt: "A website on a laptop screen that features playwright Paula Vogel, along with a mobile device with a photo of the founder of Shake Shack"
-cta: "Spotlight on Cornellians"
+cta: "Putting a spotlight on Cornellians"
 tags:
   - "UX/UI"
   - "Design"

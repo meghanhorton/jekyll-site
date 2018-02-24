@@ -6,7 +6,7 @@ class: brand
 img: 
   src: /assets/img/mockups/visit.png
   alt: "Screenshots of the Cornell University visit website on desktop, mobile, and tablet"
-cta: "Plan a visit"
+cta: "The visit starts with a click"
 tags:
   - "UX/UI"
   - "Design"
