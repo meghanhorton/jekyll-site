@@ -7,5 +7,19 @@
 .works{
   .works-wrapper{
     margin: split-values($margin-large,vertical) auto;
+
+    .row-work{
+      margin-bottom: split-values($margin-large,vertical);
+    }
+
+    .tags{
+      color: $gray-dark;
+
+      .tag:before{
+        content: "\2022";
+        padding-right: $border-width*2;
+        color: $color-secondary;
+      }
+    }
   }
 }

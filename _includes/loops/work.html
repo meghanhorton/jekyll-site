@@ -9,12 +9,12 @@
   <h4 class="tags small">{% include loops/tags.html tags=project.tags %}</h4>
   <p>{{ project.content }}</p>
   <div class="btn-wrapper">
-    <a href="{{ project.url }}" class="btn btn-outline btn-inline" target="_blank" aria-label="Button linking to {{ project.title }}">{{ project.cta }}</a>
+    <a href="{{ project.url }}" class="btn btn-outline btn-inline" aria-label="Button linking to {{ project.title }}">{{ project.cta }}</a>
   </div>
 {% endcapture %}
 
 {% capture col-img %}
-  <a class="img" href="{{ project.url }}" target="_blank" aria-label="Image linking to {{ project.title }}" aria-hidden="true">
+  <a class="img" href="{{ project.url }}" aria-label="Image linking to {{ project.title }}" aria-hidden="true">
     <img class="img-responsive" src="{{ site.baseurl }}{{ project.img.src }}" alt="{{ project.img.alt }}">
   </a>
 {% endcapture %}
