@@ -4,7 +4,7 @@ weight: 2
 class: brand
 
 img: 
-  src: assets/img/mockups/brand.png
+  src: /assets/img/mockups/brand.png
   alt: "The Cornell University Brand website on a laptop and mobile device."
 cta: "Visit site"
 tags:

@@ -14,8 +14,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Portfolio
-email: meghan.horton@cornell.edu
-description: Hi
+email: meghan.leigh.horton@gmail.com
+description: Meghan Horton is a web designer, front-end developer, and user interface designer based in Raleigh, North Carolina.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: meghan_horton
