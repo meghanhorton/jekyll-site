@@ -43,17 +43,13 @@ Since it's launch, over 70,000 visitors have used the "itinerary builder" to pla
   </div>
 </section>
 
-<section>
-  <!-- Email Templates -->
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
+<section class="double-img">
+  <div class="double-img-row">
+    <div class="double-img-item">
         <img src="{{ site.baseurl }}/assets/img/mockups/visit/visit.email.iphone.jpg" alt="Email confirmation for the Cornell Itinerary" class="img-responsive">
-      </div>
-      <div class="col-sm-6">
+    </div>
+    <div class="double-img-item">
         <img src="{{ site.baseurl }}/assets/img/mockups/visit/visit.paper.jpg" alt="Print version of the Cornell Itinerary" class="img-responsive">
-      </div>
-     
     </div>
   </div>
 </section>
