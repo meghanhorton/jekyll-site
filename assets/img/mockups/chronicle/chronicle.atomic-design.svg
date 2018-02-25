@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="459.7 335 1512 283" style="enable-background:new 459.7 335 1512 283;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#110000;stroke-width:4;stroke-miterlimit:10;}
+	.st1{fill:#7E57C2;}
+	.st2{fill:none;stroke:#110000;stroke-width:6;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#110000;stroke-width:6;stroke-miterlimit:10;stroke-dasharray:11.5716,11.5716;}
+	.st4{fill:none;stroke:#110000;stroke-width:6;stroke-miterlimit:10;stroke-dasharray:6.3774,6.3774;}
+	.st5{fill:none;stroke:#110000;stroke-width:6;stroke-miterlimit:10;stroke-dasharray:13.105,13.105;}
+	.st6{fill:none;stroke:#110000;stroke-width:6;stroke-miterlimit:10;stroke-dasharray:11.3823,11.3823;}
+	.st7{fill:none;stroke:#110000;stroke-width:6;stroke-miterlimit:10;stroke-dasharray:6.8286,6.8286;}
+	.st8{fill:none;stroke:#110000;stroke-width:6;stroke-miterlimit:10;stroke-dasharray:11.8745,11.8745;}
+	.st9{fill:none;stroke:#110000;stroke-width:6;stroke-miterlimit:10;stroke-dasharray:6.8288,6.8288;}
+	.st10{fill:none;stroke:#110000;stroke-width:6;stroke-miterlimit:10;stroke-dasharray:11.8746,11.8746;}
+	.st11{fill:none;stroke:#110000;stroke-width:6;stroke-miterlimit:10;stroke-dasharray:6.3776,6.3776;}
+	.st12{fill:#FFC107;}
+	.st13{fill:none;stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
+
+	g[id^="rotate"], .rotate {
+		-webkit-animation-name: rotate; 
+		-webkit-animation-duration: 30s; 
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-timing-function: linear;
+		-moz-animation-name: rotate; 
+		-moz-animation-duration: 30s; 
+		-moz-animation-iteration-count: infinite;
+		-moz-animation-timing-function: linear;
+		animation-name: rotate; 
+		animation-duration: 30s; 
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+
+	.rotate.rotate-cc{
+		-webkit-animation-name: rotate-cc;
+		-moz-animation-name: rotate-cc; 
+		animation-name: rotate-cc; 
+	}
+
+	@-webkit-keyframes rotate {
+		from {-webkit-transform: rotate(0deg);}
+		to {-webkit-transform: rotate(360deg);}
+	}
+
+	@-moz-keyframes rotate {
+		from {-moz-transform: rotate(0deg);}
+		to {-moz-transform: rotate(360deg);}
+	}
+
+	@keyframes rotate-cc {
+		from {transform: rotate(0deg);}
+		to {transform: rotate(-360deg);}
+	}
+
+	@-webkit-keyframes rotate-cc {
+		from {-webkit-transform: rotate(0deg);}
+		to {-webkit-transform: rotate(-360deg);}
+	}
+
+	@-moz-keyframes rotate-cc {
+		from {-moz-transform: rotate(0deg);}
+		to {-moz-transform: rotate(-360deg);}
+	}
+
+	@keyframes rotate-cc {
+		from {transform: rotate(0deg);}
+		to {transform: rotate(-360deg);}
+	}
+</style>
+
+<g id="Atoms">
+	<circle id="inner_1_" class="st1" cx="583.3" cy="477.6" r="52.8"/>
+	<g style="transform-origin: 583.3px 477.6px">
+		<circle id="path_4_" class="st13" cx="583.3" cy="477.6" r="91.6"/>
+		<circle id="dot" class="st1" cx="655.5" cy="420.8" r="22.4"/>
+	</g>
+</g>
+
+<g id="Molecules">
+	<g id="bottom-left">
+		<g style="transform-origin: 823px 525.3px;">
+			<circle id="path_3_" class="st2" cx="823" cy="525.3" r="49.3"/>
+			<circle id="dot_6_" class="st1" cx="850.6" cy="484.7" r="7.2"/>
+			<circle id="dot_5_" class="st1" cx="871.6" cy="526.1" r="7.2"/>
+		</g>
+		<circle id="inner_3_" class="st1" cx="823" cy="525.3" r="28.4"/>
+	</g>
+	<g id="bottom-right">
+		<g style="transform-origin: 934.3px 525.3px;">
+			<circle id="path_2_" class="st2" cx="934.3" cy="525.3" r="49.3"/>
+			<circle id="dot_4_" class="st1" cx="884.9" cy="526.1" r="7.2"/>
+			<circle id="dot_3_" class="st1" cx="913.1" cy="483.2" r="7.2"/>
+		</g>
+		<circle id="inner_2_" class="st1" cx="934.3" cy="525.3" r="28.4"/>
+	</g>
+	<g id="top">
+		<g>
+			<circle id="path_1_" class="st2" cx="878.5" cy="429.5" r="49.3"/>
+			<circle id="dot_2_" class="st1" cx="857.3" cy="472.1" r="7.2"/>
+			<circle id="dot_1_" class="st1" cx="905.9" cy="471" r="7.2"/>
+		</g>
+		<circle id="inner" class="st1" cx="878.5" cy="429.5" r="28.4"/>
+	</g>
+</g>
+
+<g class="organisms">
+	<!-- ROW 1 -->
+	<g style="transform-origin: 1122.6px 414.2px">
+		<circle class="st0" cx="1122.6" cy="414.2" r="29.3"/>
+		<circle class="st1" cx="1122.6" cy="414.2" r="16.9"/>
+	</g>
+	<g style="transform-origin: 1185.5px 414.2px">
+		<circle class="st0" cx="1185.5" cy="414.2" r="29.3"/>
+		<circle class="st1" cx="1185.5" cy="414.2" r="16.9"/>
+	</g>
+	<g style="transform-origin: 1248.5px 414.2px">
+		<circle class="st0" cx="1248.5" cy="414.2" r="29.3"/>
+		<circle class="st1" cx="1248.5" cy="414.2" r="16.9"/>
+	</g>
+	<g style="transform-origin: 1312.2px 414.2px">
+		<circle class="st0" cx="1312.2" cy="414.2" r="29.3"/>
+		<circle class="st1" cx="1312.2" cy="414.2" r="16.9"/>
+	</g>
+
+	<!-- ROW 2 -->
+	<g style="transform-origin: 1122.6px 477.2px">
+		<circle class="st0" cx="1122.6" cy="477.2" r="29.3"/>
+		<circle class="st1" cx="1122.6" cy="477.2" r="16.9"/>
+	</g>
+	<g style="transform-origin: 1185.5px 477.2px">
+		<circle class="st0" cx="1185.5" cy="477.2" r="29.3"/>
+		<circle class="st1" cx="1185.5" cy="477.2" r="16.9"/>
+	</g>
+	<g style="transform-origin: 1248.5px 477.2px">
+		<circle class="st0" cx="1248.5" cy="477.2" r="29.3"/>
+		<circle class="st1" cx="1248.5" cy="477.2" r="16.9"/>
+	</g>
+	<g style="transform-origin: 1312.2px 477.2px">
+		<circle class="st0" cx="1312.2" cy="477.2" r="29.3"/>
+		<circle class="st1" cx="1312.2" cy="477.2" r="16.9"/>
+	</g>
+
+	<!-- ROW 3 -->
+	<g style="transform-origin: 1122.6px 540.1px">
+		<circle class="st0" cx="1122.6" cy="540.1" r="29.3"/>
+		<circle class="st1" cx="1122.6" cy="540.1" r="16.9"/>
+	</g>
+	<g style="transform-origin: 1185.5px 540.1px">
+		<circle class="st0" cx="1185.5" cy="540.1" r="29.3"/>
+		<circle class="st1" cx="1185.5" cy="540.1" r="16.9"/>
+	</g>
+	<g style="transform-origin: 1248.5px 540.1px">
+		<circle class="st0" cx="1248.5" cy="540.1" r="29.3"/>
+		<circle class="st1" cx="1248.5" cy="540.1" r="16.9"/>
+	</g>
+	<g style="transform-origin: 1312.2px 540.1px">
+		<circle class="st0" cx="1312.2" cy="540.1" r="29.3"/>
+		<circle class="st1" cx="1312.2" cy="540.1" r="16.9"/>
+	</g>
+
+	<!-- ROTATING DOTS -->
+		
+		<circle class="st1" cx="1153.7" cy="414.2" r="8.1" style="transform-origin: 1122.6px 414.2px"/><!-- ROW1/CIRCLE1 -->
+		<circle class="st1" cx="1216.6" cy="414.2" r="8.1" style="transform-origin: 1185.5px 414.2px"/><!-- ROW1/CIRCLE2 -->
+		<circle class="st1" cx="1280.3" cy="414.2" r="8.1" style="transform-origin: 1312.2px 414.2px"/><!-- ROW1/CIRCLE4 -->
+		
+		
+		<circle class="st1" cx="1153.7" cy="475.7" r="8.1" style="transform-origin: 1122.6px 477.2px"/><!-- ROW2/CIRCLE1 -->
+		<circle class="st1" cx="1216.6" cy="475.7" r="8.1" style="transform-origin: 1185.5px 477.2px"/><!-- ROW2/CIRCLE2 -->
+		<circle class="st1" cx="1280.3" cy="475.7" r="8.1" style="transform-origin: 1248.5px 477.2px"/><!-- ROW2/CIRCLE3-->
+
+		<circle class="st1" cx="1153.7" cy="538.6" r="8.1" style="transform-origin: 1122.6px 540.1px"/><!-- ROW3/CIRCLE1 -->
+		<circle class="st1" cx="1216.6" cy="538.6" r="8.1" style="transform-origin: 1185.5px 540.1px"/><!-- ROW3/CIRCLE1 -->
+		<circle class="st1" cx="1280.3" cy="538.6" r="8.1" style="transform-origin: 1248.5px 540.1px"/><!-- ROW3/CIRCLE1 -->
+
+
+		<circle class="st1" cx="1122.6" cy="445.8" r="8.1"/>
+		<circle class="st1" cx="1187" cy="445.8" r="8.1"/>
+		<circle class="st1" cx="1249.2" cy="445.8" r="8.1"/>
+		<circle class="st1" cx="1312.2" cy="445.8" r="8.1"/>
+
+		<circle class="st1" cx="1122.6" cy="508.7" r="8.1"/>
+		<circle class="st1" cx="1187" cy="508.7" r="8.1"/>
+		<circle class="st1" cx="1249.2" cy="508.7" r="8.1"/>
+		<circle class="st1" cx="1312.2" cy="508.7" r="8.1"/>
+</g>
+
+
+<g>
+	<g>
+		<g>
+			<polyline class="st2" points="1639.7,361 1639.7,355 1633.7,355 			"/>
+			<line class="st3" x1="1622.1" y1="355" x2="1489.1" y2="355"/>
+			<polyline class="st2" points="1483.3,355 1477.3,355 1477.3,361 			"/>
+			<line class="st4" x1="1477.3" y1="367.4" x2="1477.3" y2="376.9"/>
+			<polyline class="st2" points="1477.3,380.1 1477.3,386.1 1483.3,386.1 			"/>
+			<line class="st5" x1="1496.4" y1="386.1" x2="1594.7" y2="386.1"/>
+			<polyline class="st2" points="1601.2,386.1 1607.2,386.1 1607.2,392.1 			"/>
+			<line class="st6" x1="1607.2" y1="403.5" x2="1607.2" y2="557.2"/>
+			<polyline class="st2" points="1607.2,562.9 1607.2,568.9 1613.2,568.9 			"/>
+			<line class="st7" x1="1620.1" y1="568.9" x2="1630.3" y2="568.9"/>
+			<polyline class="st2" points="1634.7,568.9 1639.7,568.9 1639.7,563.9 			"/>
+			<line class="st8" x1="1639.7" y1="551" x2="1639.7" y2="366.9"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<polyline class="st2" points="1477.3,390.4 1477.3,386.1 1471.3,386.1 			"/>
+			<line class="st9" x1="1464.5" y1="386.1" x2="1454.2" y2="386.1"/>
+			<polyline class="st2" points="1450.8,386.1 1444.8,386.1 1444.8,392.1 			"/>
+			<line class="st10" x1="1444.8" y1="404" x2="1444.8" y2="588.1"/>
+			<polyline class="st2" points="1444.8,594 1444.8,600 1450.8,600 			"/>
+			<line class="st3" x1="1462.4" y1="600" x2="1595.4" y2="600"/>
+			<polyline class="st2" points="1601.2,600 1607.2,600 1607.2,594 			"/>
+			<line class="st11" x1="1607.2" y1="587.6" x2="1607.2" y2="578.1"/>
+			<polyline class="st2" points="1607.2,574.9 1607.2,568.9 1603.8,568.9 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<polygon class="st2" points="1950.4,355 1782.6,355 1782.6,379.5 1878.4,379.5 1926,425.6 1926,576 1950.4,576 	"/>
+	<polyline class="st2" points="1879.1,379.5 1758.1,379.5 1758.1,600.5 1926,600.5 1926,431.9 	"/>
+	<polygon class="st2" points="1880.9,385.9 1881,426 1920.6,426.2 	"/>
+</g>
+<polygon class="st12" points="734.3,476 719,490.6 719,461.4 "/>
+<polygon class="st12" points="1045.3,476 1030,490.6 1030,461.4 "/>
+<polygon class="st12" points="1401.3,476 1386,490.6 1386,461.4 "/>
+<polygon class="st12" points="1707.3,476 1692,490.6 1692,461.4 "/>
+
+
+</svg>
