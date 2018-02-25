@@ -14,7 +14,7 @@ tags:
   - "Development"
   - "Project Management"
 
-url: http://brand.cornell.edu
+external-url: http://brand.cornell.edu
 ---
 
 Setting the standard for brand usage across campus, this overhaul tackled the brand guidelines as much as the site design.

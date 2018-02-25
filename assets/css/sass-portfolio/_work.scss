@@ -7,6 +7,15 @@
     padding: split-values($padding-large,vertical) 0;
   }
 
+  header,section,.section{
+    > .container{
+      @include media-breakpoint-down('sm'){
+        padding-left: split-values($padding-base,horizontal);
+        padding-right: split-values($padding-base,horizontal);
+      }
+    }
+  }
+
   .double-img{
     @extend .container;
 

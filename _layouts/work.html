@@ -16,11 +16,17 @@ class: work
   
 
   <div aria-label="body" class="body">
+    {% if page.content != page.excerpt %}
     {{ page.content | remove: page.excerpt }}
+    {% else %}
+    <div class="container">
+      {{ page.excerpt }}
+    </div>
+    {% endif %}
 
     <section aria-label="Visit">
       <div class="text-center">
-        <a class="btn btn-inline" href="{{ page.url }}">Visit site</a>
+        <a class="btn btn-inline" target="_blank" href="{{ page.external-url }}">Visit site <span class="zmdi zmdi-open-in-new"></span></a>
       </div>
     </section>
   </div>

@@ -13,7 +13,7 @@ tags:
   - "Content"
   - "Vendor Relations"
 
-url: http://news.cornell.edu
+external-url: http://news.cornell.edu
 ---
 
 Designed with the user in mind, the new Chronicle experience provides readers with more lateral movement across the site to discover more relevant articles and puts the emphasis on content.
@@ -42,7 +42,9 @@ Designed with the user in mind, the new Chronicle experience provides readers wi
 
 <section>
   <!-- Email Templates -->
-  <img class="img-responsive" src="{{ site.baseurl }}/assets/img/mockups/chronicle/chronicle.atomic-design.svg" alt="Atomic Design">
+  <div class="container">
+    <img class="img-responsive" src="{{ site.baseurl }}/assets/img/mockups/chronicle/chronicle.atomic-design.svg" alt="Atomic Design">
+  </div>
 </section>
 
 <section>
