@@ -2,6 +2,10 @@
 layout: wrapper
 ---
 
+{% if page.container == true %}
 <div class="container">
   {{ content }}
 </div>
+{% else %}
+{{ content }}
+{% endif %}

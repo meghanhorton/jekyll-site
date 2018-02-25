@@ -47,12 +47,18 @@ collections:
   work: 
     output: true
 
+
 # Defaults
 defaults:
+  - scope:
+      path: ""
+    values:
+      container: true
   - scope:
       type: "work"
     values:
       layout: "work"
+      container: false
 
 # Excerpt
 excerpt_separator: "<!--break-->"
