@@ -7,7 +7,7 @@
 {% capture col-title %}
   <h3>{{ project.title }}</h3>
   <h4 class="tags small">{% include loops/tags.html tags=project.tags %}</h4>
-  <p>{{ project.content }}</p>
+  <p>{{ project.excerpt }}</p>
   <div class="btn-wrapper">
     <a href="{{ project.url }}" class="btn btn-outline btn-inline" aria-label="Button linking to {{ project.title }}">{{ project.cta }}</a>
   </div>

@@ -1,6 +1,52 @@
 .work{
-  .article{
+  article,.article{
     margin: split-values($margin-large,vertical) auto;
+  }
+
+  section,.section{
+    padding: split-values($padding-large,vertical) 0;
+  }
+
+  .explainer{
+    @extend .container;
+
+    .explainer-content{
+      @extend .row;
+    }
+
+    .explainer-heading{
+      @include make-col(3);
+
+      &:before{
+        content: "";
+        display: block;
+        width: 25%;
+        height: $border-width;
+        margin-top: 0.5em;
+        background: $border-color-table;
+      }
+
+      > *:first-child{
+        text-transform: uppercase;
+        font-size: $font-size-small;
+        color: $gray-light;
+      }
+
+      > *:nth-child(2){
+        font-size: $font-size-base;
+      }
+      
+    }
+
+    .explainer-details{
+      @include make-col(9);
+
+      // Align first child with top
+      > *:first-child{
+        margin-top: 0;
+        padding-top: 0;
+      }
+    }
   }
 }
 
@@ -11,15 +57,17 @@
     .row-work{
       margin-bottom: split-values($margin-large,vertical);
     }
+  }
+}
 
-    .tags{
-      color: $gray-dark;
+.work,.works{
+  .tags{
+    color: $gray-dark;
 
-      .tag:before{
-        content: "\2022";
-        padding-right: $border-width*2;
-        color: $color-secondary;
-      }
+    .tag:before{
+      content: "\2022";
+      padding-right: $border-width*2;
+      color: $color-secondary;
     }
   }
 }
