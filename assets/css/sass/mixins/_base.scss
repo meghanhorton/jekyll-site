@@ -65,7 +65,7 @@
       @include media-breakpoint-down($upper, $breakpoints) {
         @content;
       }
-    } else{
+    } @else{
       @content;
     }
     
