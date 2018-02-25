@@ -6,7 +6,7 @@ class: chronicle
 img: 
   src: /assets/img/mockups/chronicle/chronicle.png
   alt: "The Cornell University news website on a laptop and mobile device."
-cta: "Bringing news to the Cornell community"
+cta: 'Bringing news to <span class="hidden-xs">the </span>Cornell<span class="hidden-xs"> community</span>'
 tags:
   - "UX/UI"
   - "Design"
