@@ -64,6 +64,15 @@
 
       .row.row-work{
         padding: $margin-large;
+
+        @include media-breakpoint-down('sm'){
+          padding: $padding-base;
+          margin-bottom: split-values($margin-large,vertical);
+          
+          [class^="col"]:first-child{
+            margin-bottom: split-values($margin-base,vertical);
+          }
+        }
       }
 
       .btn-wrapper{
@@ -71,6 +80,10 @@
 
         .btn{
           margin: 0 auto;
+        }
+
+        @include media-breakpoint-down('sm'){
+          text-align: center;
         }
       }
 
