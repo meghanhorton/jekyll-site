@@ -9,3 +9,9 @@
     color: inherit;
   }
 }
+
+@include media-breakpoint-up('lg'){
+  .nobr-lg{
+    white-space: nowrap;
+  }
+}

@@ -137,5 +137,6 @@
   // Run portfolio
   document.addEventListener("DOMContentLoaded", function() {
     portfolio.init();
+    var scroll = new SmoothScroll('a[href*="#"]');
   });
 }).call(this);
