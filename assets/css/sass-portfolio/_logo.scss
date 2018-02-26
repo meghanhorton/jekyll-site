@@ -16,6 +16,10 @@ $horton_width: 348.2px;
 // **********
 // BRAND LINK
 // **********
+.nav-brand{
+  font-family: $nav-brand-font-family;
+}
+
 a.nav-brand{
   display: block;
   box-sizing: content-box;

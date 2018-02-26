@@ -17,7 +17,10 @@
       <!-- <span class="h4">{{ site.data.nav.title }}</span> -->
       <ul class="nav-items">
         {% for nav-item in site.data.nav.items %}
-          <li {% if page.url == nav-item.url %}class="active"{% endif %}>
+          {% assign navItemClasses="" %}
+          {% if page.url == nav-item.url %}{% assign navItemClasses=navItemClasses | append: "active" %}{% endif %}
+          {% if nav-item.class %}{% assign navItemClasses=navItemClasses | append: " " | append: nav-item.class %}{% endif %}
+          <li class="{{ navItemClasses }}">
             <a href="{{ site.baseurl }}{{ nav-item.url }}" 
               {% if nav-item.aria-label %}aria-label="{{ nav-item.aria-label }}"{% endif %}
               {% if nav-item.data-target %}data-target="{{ nav-item.data-target }}"{% endif %}>

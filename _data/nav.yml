@@ -3,6 +3,7 @@ items:
   - name: Meghan Horton
     aria-label: Home
     url: /
+    class: nav-brand
   - name: Work
     url: /work
   - name: Thoughts

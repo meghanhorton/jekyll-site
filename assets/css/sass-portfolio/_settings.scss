@@ -4,13 +4,14 @@
 
   $font-size-base:               ceil($base*2.125);
   $font-size-large:               $font-size-base * 1.5;
-  $font-family-secondary:        'Lora', sans-serif !default;
+  $font-family-secondary:        'Lora', serif !default;
   $line-height-base:             1.8;
 
   // Navigation
   $nav-trigger-color:             $gray-light;
-  $nav-menu-font-family:          $font-family-secondary;
+  $nav-menu-font-family:          $font-family-base;
   $nav-menu-font-size:            $font-size-large;
+  $nav-brand-font-family:         'Playfair Display', cursive !default;
 
   // Buttons
   // COLORS
