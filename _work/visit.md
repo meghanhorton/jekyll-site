@@ -14,7 +14,7 @@ tags:
 external-url: http://cornell.edu/visit/plan
 ---
 
-Since it's launch, over 70,000 visitors have used the "itinerary builder" to plan a customized visit on campus. This <a href="http://www.case.org/Awards/Circle_of_Excellence/About_COE/Previous_Winners/2015_Winners/Websites_2015.html" target="_blank">award-winning tool</a> has paved the way for countless other event-management opportunities on campus.
+Since it's launch, over 70,000 visitors have used the "itinerary builder" to plan a customized visit on campus. This <a href="http://www.case.org/Awards/Circle_of_Excellence/About_COE/Previous_Winners/2015_Winners/Websites_2015.html" target="_blank">award-winning tool</a> has paved the way for countless other event management opportunities on campus.
 
 <!--break-->
 
@@ -37,7 +37,7 @@ Since it's launch, over 70,000 visitors have used the "itinerary builder" to pla
         <h4>Thousands of combinations to create your own visit experience</h4>
       </div>
       <div class="explainer-details">
-        <p>With thousands of prospective students visiting Cornell nearly every day of the year, the Visitor Relations office was constantly busy with organizing tours, class visits, and other events for visitors embarking on a trip to campus. With "Itinerary Builder," as we named it internally, the online tool helps visitors manage their own visits and the University manage attendance numbers, resources, and other hard-to-track data points for physical visits to campus.</p>
+        <p>With thousands of prospective students visiting Cornell nearly every day of the year, the Visitor Relations office was constantly busy with organizing tours, class visits, and other events for visitors embarking on a trip to campus. With "Itinerary Builder," as we named it internally, the online tool helps visitors manage their own visits and the University manage attendance numbers, resources, and other hard to track data points for physical visits to campus.</p>
       </div>
     </div>
   </div>

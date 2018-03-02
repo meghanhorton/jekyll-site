@@ -54,7 +54,7 @@ Setting the standard for brand usage across campus, this overhaul tackled the br
         <h4>Nothing is set in stone</h4>
       </div>
       <div class="explainer-details">
-        <p>Gone are the days of an unchangeable and published brand. The digital environment has created a need for continually adapting and fluid brand guidelines. From colors that need to be adapted for accessibility, to logo restrictions for various screensizes, to clarifications for rules when a new condition is created, the brand guide is no longer a static piece of content, but a living document.</p>
+        <p>Gone are the days of an unchangeable and published brand. The digital environment has created a need for continually adapting and fluid brand guidelines. From colors that need to be adapted for accessibility, to logo restrictions for various screen sizes, to clarifications for rules when a new condition is created, the brand guide is no longer a static piece of content, but a living document.</p>
       </div>
     </div>
   </div>

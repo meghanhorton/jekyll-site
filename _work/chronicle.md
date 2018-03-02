@@ -22,7 +22,7 @@ Designed with the user in mind, the new Chronicle experience provides readers wi
 
 <section>
   <div class="container">
-    <p><strong>The voice of the University must be heard.</strong> For much of Cornell University's 150+ year history, the Cornell Chronicle has served as the news source for official communications &mdash; a megaphone for promoting the University community's accomplishmentsacross the globe to an average of 140,000 unique users per month.</p>
+    <p><strong>The voice of the University must be heard.</strong> For much of Cornell University's 150+ year history, the Cornell Chronicle has served as the news source for official communications &mdash; a megaphone for promoting the University community's accomplishments across the globe to an average of 140,000 unique users per month.</p>
   </div>
 </section>
 
@@ -34,7 +34,7 @@ Designed with the user in mind, the new Chronicle experience provides readers wi
         <h4>Allowing users to discover more</h4>
       </div>
       <div class="explainer-details">
-        <p>Through user studies of the previous iteration of the Cornell Chronicle website, one major pain point for users was proven to be lateral movement between stories. Through a combination of design elements and integrated components, it's easier for users to discover stories they want to read.</p>
+        <p>Through user studies of the previous iteration of the Cornell Chronicle website, one major pain point for users was proved to be lateral movement between stories. Through a combination of design elements and integrated components, it's easier for users to discover stories they want to read.</p>
       </div>
     </div>
   </div>
