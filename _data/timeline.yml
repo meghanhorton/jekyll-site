@@ -1,0 +1,35 @@
+- title: "\"Architecture is my delight\"<br/><small><em>- Thomas Jefferson</em></small>"
+  year:
+    start: 2006
+    end: 2010
+  description: "<p>While pursuing a B.S. Architecture, I enrolled in a simple elective that taught basic HTML/CSS. This simple course sparked late nights of elementary coding and experimentation.</p><p>Though I was unable to take programming courses due to my rigorous architecture schedule, I continued to pursue my nerdy hobby and improve my design and software skills.</p>"
+- title: "Going independent"
+  year: 
+    start: 2010
+  description: "<p>In my last semester at UVA, I was finally able to pursue my passion for coding. Through an independent study, I pursued PHP.</p><p>By the end of the semester, I had developed my first homegrown CMS and been offered a position to develop and maintain sites until I started my graduate studies.</p>"
+- title: "Things are falling...into place"
+  year: 
+    start: 2010
+    end: 2012
+  description: "<p>I continued to pursue my love for design through an M.Arch. I cautiously applied to a graduate assistant position to redesign grad.clemson.edu against Computer Science students. One thing I did have that my competition didn't? An eye for design.</p>"
+- title: "#3 in the ACC"
+  year: 
+    start: 2012
+  description: "<p>About an hour before I had my diploma in hand, I received the call that every student longs form - a job offer! No, it wasn't like the jobs my classmates pursued, but I was ecstatic. Next stop: the University of North Carolina,my third ACC employer.</p>"
+- title: "Getting down to business"
+  year: 
+    start: 2012
+    end: 2014
+  description: "<p>In the Reese News Lab, I tinkered with prototypes for students' entrepreneurial ideas while managing sites in Wordpress, Drupal, and other environments for the then-School of Journalism and Mass Communication. I led brainstorms, I crafted prototypes, and create more flyers and email campaigns than you would believe.</p>"
+- title: "Following my heart...and my husband"
+  year: 
+    start: 2014
+  description: "<p>In 2014, life took me to Ithaca, New York, where I braved the coldest February on record and became lead designer for the team that manages cornell.edu, among other projects. Though my title is web designer, my work goes far beyond mockups and comps.</p>"
+- title: "Coming full circle, via Beantown"
+  year:
+    start: 2016
+  description: "<p>After two years in Ithaca, our time was up. It was time to move on, this time to Boston. Fortunately, I was able to maintain my role at Cornell and take it with me and have worked as a remote employee since 2016. In the summer of 2017, we returned back to the Triangle where we plan to stay...for a very long time!</p>"
+- title: "Next steps..."
+  year:
+    start: 2018
+  description: "<p>I don't know what life will bring next, but I love working with people, designing innovative projects, and coding to my heart's desire. <a href=\"/#contact\">Let me know what I can do for you.</a></p>"

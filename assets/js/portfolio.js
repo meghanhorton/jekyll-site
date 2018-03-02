@@ -134,9 +134,36 @@
     }
   }
 
+  timeline = {
+    init: function(){
+        var items = document.querySelectorAll(".timeline li");
+        window.addEventListener("load", timeline.callbackFunc(items));
+        window.addEventListener("resize", timeline.callbackFunc(items));
+        window.addEventListener("scroll", timeline.callbackFunc(items));
+    },
+    isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        // console.log(el,rect.top,rect.left,rect.bottom,rect.right);
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    },
+    callbackFunc(items) {
+      for (var i = 0; i < items.length; i++) {
+        if (timeline.isElementInViewport(items[i])) {
+          items[i].classList.add("in-view");
+        }
+      }
+    }
+  };
+
   // Run portfolio
   document.addEventListener("DOMContentLoaded", function() {
     portfolio.init();
+    timeline.init();
     var scroll = new SmoothScroll('a[href*="#"]');
   });
 }).call(this);

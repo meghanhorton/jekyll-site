@@ -1,0 +1,14 @@
+<section class="timeline">
+    <h2 class="timeline-heading">{{ include.title }}</h2>
+    <ul>
+    {% for point in site.data.timeline %}
+        <li>
+            <div class="timeline-item">
+                <time>{{ point.year.start }}{% if point.year.end %} &ndash; {{ point.year.end }}{% endif %}</time>
+                <h4 class="timeline-title">{{ point.title }}</h4>
+                <div class="timeline-description">{{ point.description }}</div>
+            </div>
+        </li>
+    {% endfor %}
+    </ul>
+</section>

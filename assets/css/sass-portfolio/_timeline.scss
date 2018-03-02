@@ -1,0 +1,184 @@
+$triangle-size: 16px;
+$divBG: darken($gray-lighter,2%);
+$spacing: 2.5vw;
+$width: 40vw;
+$line-width: 6px;
+
+.timeline .timeline-heading{
+  color: $color-primary;
+  text-align: center;
+  font-size: $font-size-h4;
+  margin-top: split-values($margin-large);
+}
+
+.timeline ul {
+  li {
+    list-style-type: none;
+    position: relative;
+    width: $line-width;
+    margin: 0 auto;
+    padding-top: split-values($margin-large,'vertical');
+    background: $color-primary;
+
+    .timeline-item {
+      position: relative;
+      bottom: 0;
+      width: $width;
+      padding: $padding-large;
+      background: $divBG;
+      transition: all .5s ease-in-out;
+      visibility: hidden;
+      opacity: 0;
+
+      a{
+        text-shadow: none;
+      }
+
+      .timeline-title,.timeline-description{
+        margin: 0;
+
+        p{
+          font-size: 0.9em;
+          display: block;
+        }
+      }
+
+      time{
+        font-size: $font-size-small;
+      }
+
+      .timeline-title{
+        font-size: $font-size-base*1.125;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: $triangle-size/2;
+        width: 0;
+        height: 0;
+        border-style: solid;
+      }
+    }
+
+    &:nth-child(odd) .timeline-item {
+      left: calc(#{$spacing} + #{$line-width});
+      transform: translate3d(20vw, 0, 0);
+
+      &:before {
+        left: -#{$triangle-size - 1px};
+        border-width: #{$triangle-size/2} $triangle-size #{$triangle-size/2} 0;
+        border-color: transparent $divBG transparent transparent;
+      }
+    }
+
+    &:nth-child(even) .timeline-item {
+      left: -#{$width + $spacing};
+      transform: translate3d(-20vw, 0, 0);
+
+      &:before {
+        right: -#{$triangle-size - 1px};
+        border-width: #{$triangle-size/2} 0 #{$triangle-size/2} $triangle-size;
+        border-color: transparent transparent transparent $divBG;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: inherit;
+      transition: background .5s ease-in-out;
+    }
+
+    time {
+      display: block;
+      font-weight: bold;
+    }
+  }
+}
+    
+  
+  /* EFFECTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    
+
+  .timeline{
+    ul{
+      li{
+        &.in-view{
+          .timeline-item{
+            transform: none;
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  
+  
+  /* GENERAL MEDIA QUERIES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  @include media-breakpoint-up('lg'){
+    .timeline ul li{
+      &:not(:first-child){
+        margin-top: -150px;
+      }
+    }
+  }
+  
+  // @include media-breakpoint-down('lg') {
+  //   .timeline ul li {
+  //     &:nth-child(even) div {
+  //       // left: -289px;
+  //       /*250+45-6*/
+  //     }
+  //     div {
+  //       width: 250px;
+  //     }
+  //   }
+  // }
+  
+@include media-breakpoint-down('md') {
+  .timeline .timeline-heading{
+    padding-left: $spacing;
+    text-align: left;
+  }
+  .timeline ul li {
+    margin-left: $spacing;
+
+    .timeline-item {
+      width: 80vw!important;
+      left: 40px!important;
+      right: 0!important;
+
+      &:before {
+        left: -#{$triangle-size - 1px};
+        right: 0;
+        border-width: #{$triangle-size/2} $triangle-size #{$triangle-size/2} 0!important;
+        border-color: transparent $divBG transparent transparent!important;
+      }
+
+      .timeline-description{
+        font-size: $font-size-base*0.8;
+      }
+    }
+
+    // &:nth-child(even) div {
+    //   left: 45px;
+    // }
+
+    // &:nth-child(even) div::before {
+    //   left: -15px;
+    //   border-width: 8px 16px 8px 0;
+    //   border-color: transparent #F45B69 transparent transparent;
+    // }
+  }
+}
