@@ -1,4 +1,13 @@
 <section class="timeline">
+    <noscript>
+        <style>
+            .timeline-item{
+            transform: none!important;
+            visibility: visible!important;
+            opacity: 1!important;
+            }
+        </style>
+    </noscript>
     <h2 class="timeline-heading">{{ include.title }}</h2>
     <ul>
     {% for point in site.data.timeline %}

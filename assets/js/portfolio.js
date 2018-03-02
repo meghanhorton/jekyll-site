@@ -137,13 +137,16 @@
   timeline = {
     init: function(){
         var items = document.querySelectorAll(".timeline li");
+        var callbackDebounced = debounce(function() {
+          timeline.callbackFunc(items);
+        }, 0);
+        
         window.addEventListener("load", timeline.callbackFunc(items));
-        window.addEventListener("resize", timeline.callbackFunc(items));
-        window.addEventListener("scroll", timeline.callbackFunc(items));
+        window.addEventListener("resize", callbackDebounced);
+        window.addEventListener("scroll", callbackDebounced);
     },
     isElementInViewport(el) {
         var rect = el.getBoundingClientRect();
-        // console.log(el,rect.top,rect.left,rect.bottom,rect.right);
         return (
             rect.top >= 0 &&
             rect.left >= 0 &&
@@ -164,6 +167,23 @@
   document.addEventListener("DOMContentLoaded", function() {
     portfolio.init();
     timeline.init();
+    
+    
     var scroll = new SmoothScroll('a[href*="#"]');
   });
 }).call(this);
+
+function debounce(func, wait, immediate) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
+};
