@@ -11,6 +11,32 @@
   }
 }
 
+.contact__body{
+  ul{ 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li{
+      list-style-type: none;
+      margin: 0;
+      padding: split-values($padding-base,vertical) 0;
+
+      a{
+        text-shadow: none;
+        &:after{ display: none;}
+
+        span{
+          display: inline-block;
+          color: $gray-light;
+          margin-right: split-values($padding-base,vertical);
+        }
+      }
+    }
+  }
+  
+}
+
 @include media-breakpoint-up('lg'){
   .nobr-lg{
     white-space: nowrap;
