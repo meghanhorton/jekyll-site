@@ -4,11 +4,19 @@ $spacing: 2.5vw;
 $width: 40vw;
 $line-width: 6px;
 
-.timeline .timeline-heading{
-  color: $color-primary;
-  text-align: center;
-  font-size: $font-size-h4;
-  margin-top: split-values($margin-large);
+.about-wrapper, .about-footer{
+  margin: split-values($margin-large,vertical) auto;
+}
+
+.timeline {
+  margin-bottom: split-values($margin-large,vertical);
+
+  .timeline-heading{
+    color: $color-primary;
+    text-align: center;
+    font-size: $font-size-h4;
+    margin-top: split-values($margin-large);
+  }
 }
 
 .timeline ul {

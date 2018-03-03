@@ -4,6 +4,8 @@ items:
     aria-label: Home
     url: /
     class: nav-brand
+  - name: About
+    url: /about
   - name: Work
     url: /work
   - name: Thoughts
