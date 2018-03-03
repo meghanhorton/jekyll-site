@@ -4,7 +4,7 @@ weight: 0
 class: intro
 hideTitle: true
 ---
-I'm Meghan. I'm a <span class="nobr-lg">designer who loves to code</span> and a <span class="nobr-lg">coder who loves to design</span>.
+I'm Meghan: a <span class="nobr-lg">designer who loves to code</span> and a <span class="nobr-lg">coder who loves to design</span>.
 
 <a class="btn btn-inline btn-inverse" href="#work">Explore my work</a>
 
