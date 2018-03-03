@@ -1,0 +1,53 @@
+// Visit
+#mobile_img{
+    transition: 1s all ease-in-out;
+}
+
+.in-view #mobile_img{
+    animation-name: scrollVisitMobile;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+ }
+
+@keyframes scrollVisitMobile {
+    100% { 
+        transform: matrix(0.5142, 0, 0, 0.5142, 456.167, 125);
+        -moz-transform: matrix(0.5142, 0, 0, 0.5142, 456.167, 125);
+    }
+} 
+
+// Chronicle
+
+.in-view #ChronicleDesktop{
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-name: scrollChronicleDesktop;
+}
+
+@keyframes scrollChronicleDesktop {
+    100% { 
+        transform: matrix(1.8883, 0, 0, 1.8883, 233.5, -1000); 
+        -moz-transform: matrix(1.8883, 0, 0, 1.8883, 233.5, -1000);
+    }
+} 
+
+// Spotlight
+.in-view #spotlight-svg{
+    animation-delay: 1s;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-name: scrollSpotlight;
+}
+
+@keyframes scrollSpotlight {
+    100% { 
+        transform: matrix(0.8875, 0, 0, 0.8875, 145, -900);
+        -moz-transform: matrix(0.8875, 0, 0, 0.8875, 145, -900); 
+    }
+}  
+

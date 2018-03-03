@@ -146,20 +146,24 @@
         window.addEventListener("load", timeline.callbackFunc(items));
         window.addEventListener("resize", callbackDebounced);
         window.addEventListener("scroll", callbackDebounced);
+
+        // Adds SVGs
+        var svgs = document.querySelectorAll("svg.animate");
+        var svgDebounced = debounce(function() {
+          timeline.callbackFunc(svgs);
+        }, 0);
+        
+        window.addEventListener("load", timeline.callbackFunc(items));
+        window.addEventListener("resize", svgDebounced);
+        window.addEventListener("scroll", svgDebounced);
+
     },
-    isElementInViewport(el) {
-        var rect = el.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    },
-    callbackFunc(items) {
+    callbackFunc(items,viewClass='in-view', removeInView = false) {
       for (var i = 0; i < items.length; i++) {
-        if (timeline.isElementInViewport(items[i])) {
-          items[i].classList.add("in-view");
+        if (isElementInViewport(items[i])) {
+          items[i].classList.add(viewClass);
+        } else if(removeInView === true){
+          items[i].classList.remove(viewClass);
         }
       }
     }
@@ -174,6 +178,17 @@
     var scroll = new SmoothScroll('a[href*="#"]');
   });
 }).call(this);
+
+// Global Functions
+function isElementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+  return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+};
 
 function debounce(func, wait, immediate) {
 	var timeout;

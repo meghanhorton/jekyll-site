@@ -4,7 +4,7 @@ weight: 1
 class: brand
 
 img: 
-  src: /assets/img/mockups/visit/visit.png
+  src: /svg/visit.svg
   alt: "Screenshots of the Cornell University visit website on desktop, mobile, and tablet"
 cta: "The visit starts with a click"
 tags:

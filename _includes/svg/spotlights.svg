@@ -1,0 +1,18 @@
+<svg class="animate" version="1.1" id="Spotlights" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1000 611" style="enable-background:new 0 0 1000 611;" xml:space="preserve">
+<image style="overflow:visible;" width="1600" height="977" xlink:href="../../assets/img/mockups/spotlights/spotlights-interactive/spotlights-bg.jpg"  transform="matrix(0.6254 0 0 0.6254 0 0)">
+</image>
+<g id="spotlightWrapper">
+	<defs>
+		<path id="spotlightClip" d="M145,74v444h523V183c0,0-0.7-3.1,4.7-8.2c5.3-5.1,10.3-4.8,10.3-4.8h172V74H145z"/>
+	</defs>
+	<clipPath id="spotlightClip_1_">
+		<use xlink:href="#spotlightClip"  style="overflow:visible;"/>
+	</clipPath>
+	<g style="clip-path:url(#spotlightClip_1_);">
+		
+			<image style="overflow:visible;" width="800" height="2097" id="spotlight-svg" xlink:href="../../assets/img/mockups/spotlights/spotlights-interactive/spotlights-screenshot.jpg"  transform="matrix(0.8875 0 0 0.8875 145 74)">
+		</image>
+	</g>
+</g>
+</svg>

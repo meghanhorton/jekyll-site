@@ -1,0 +1,17 @@
+<svg class="animate" version="1.1" id="chronicle_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1600 977" style="enable-background:new 0 0 1600 977;" xml:space="preserve">
+<image style="overflow:visible;" width="1600" height="977" id="bg" xlink:href="{{ site.baseurl }}/assets/img/mockups/chronicle/chronicle-interactive/chronicle_bg.png" >
+</image>
+<g id="Laptop">
+	<defs>
+		<path id="ChronicleMask" d="M234,120v381h41.9c15.2,0,27.6,12.4,27.6,27.6V827H1367V120H234z"/>
+	</defs>
+	<clipPath id="ChronicleMask_1_">
+		<use xlink:href="#ChronicleMask"  style="overflow:visible;"/>
+	</clipPath>
+	<g style="clip-path:url(#ChronicleMask_1_);">
+			<image style="overflow:visible;" width="600" height="1220" id="ChronicleDesktop" xlink:href="{{ site.baseurl }}/assets/img/mockups/chronicle/chronicle-interactive/chronicle_desktop.png"  transform="matrix(1.8883 0 0 1.8883 233.5 120)">
+		</image>
+	</g>
+</g>
+</svg>

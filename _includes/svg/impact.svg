@@ -1,0 +1,18 @@
+<svg version="1.1" id="impact-svg-wrap_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 1600 977" style="enable-background:new 0 0 1600 977;" xml:space="preserve">
+<image style="overflow:visible;" width="1600" height="977" id="bg" xlink:href="{{ site.baseurl }}/assets/img/mockups/impact/impact-interactive/impact-bg.png" >
+</image>
+<g id="impact-svg-wrap">
+	<defs>
+		<path id="impact-mask" d="M233.3,119.7v382.7h44.9c13.5,0,24.4,10.9,24.4,24.4v301.6H1368V119.7H233.3z"/>
+	</defs>
+	<clipPath id="impact-mask_1_">
+		<use xlink:href="#impact_x002D_mask"  style="overflow:visible;"/>
+	</clipPath>
+	<g style="clip-path:url(#impact-mask_1_);">
+		
+			<image style="overflow:visible;" width="800" height="500" id="impact-gif" href="{{ site.baseurl }}/assets/img/mockups/impact/impact-interactive/impact-animation.gif"  transform="matrix(1.4173 0 0 1.4173 233.3333 119.6667)">
+		</image>
+	</g>
+</g>
+</svg>

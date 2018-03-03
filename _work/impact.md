@@ -4,7 +4,7 @@ weight: 5
 class: impact
 
 img: 
-  src: /assets/img/mockups/impact.png
+  src: /assets/img/mockups/impact/impact.png
   alt: "A blue website with infographics on a laptop computer, paired with a red website on a mobile device that reads 'Impacting NYC'"
 cta: "An impact beyond Ithaca"
 tags:

@@ -3,7 +3,15 @@
 
 {% if item.img.src %}
   {% capture img %}
-    <img class="img-responsive" src="{{ site.baseurl }}{{ item.img.src }}" alt="{{ item.img.alt }}">
+    {% if item.img.src contains ".svg" %}
+    <a class="img" href="{{ item.url }}" aria-label="Image linking to {{ item.title }}" aria-hidden="true">
+      {% include {{ item.img.src }} %}
+    </a>
+    {% else %}
+    <a class="img" href="{{ item.url }}" aria-label="Image linking to {{ item.title }}" aria-hidden="true">
+      <img class="img-responsive" src="{{ site.baseurl }}{{ item.img.src }}" alt="{{ item.img.alt }}">
+    </a>
+    {% endif %}
   {% endcapture %}
 {% elsif include.placeholder == true %}
   {% capture img %}

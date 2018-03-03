@@ -205,6 +205,9 @@ body{
 		&:focus{
 			outline-color: $gray-light;
 		}
+		&:after{
+			display: none;
+		}
 	}
 
 	// Selected text
