@@ -84,7 +84,7 @@
   },
   portfolio.modal = {
     init: function(){
-      portfolio.modal.eventActions('#contactDialog');
+      portfolio.modal.eventActions('#contact');
       portfolio.modal.closeModal();
     },
     eventActions(el){

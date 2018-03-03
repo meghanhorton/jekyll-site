@@ -17,5 +17,5 @@ container: false
 {% include timeline.html title="How did I get here?" %}
 
 <div class="container about-footer text-center">
-    <a href="/#contactDialog" class="btn btn-default btn-inline">Contact me</a>  
+    <a href="/#contact" class="btn btn-default btn-inline">Contact me</a>  
 </div>

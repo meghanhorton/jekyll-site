@@ -11,5 +11,5 @@ items:
   - name: Thoughts
     url: /thoughts
   - name: Contact
-    url: /#contactDialog
-    data-target: "#contactDialog"
+    url: /#contact
+    data-target: "#contact"
