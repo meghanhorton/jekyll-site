@@ -1,6 +1,6 @@
 ---
 title: Brand Center
-weight: 2
+weight: 3
 class: brand
 
 img: 

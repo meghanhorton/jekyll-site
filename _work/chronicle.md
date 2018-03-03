@@ -1,6 +1,6 @@
 ---
 title: Cornell Chronicle
-weight: 1
+weight: 2
 class: chronicle
 
 img: 
