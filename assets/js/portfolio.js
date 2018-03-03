@@ -5,6 +5,8 @@
       portfolio.nav.init();
       portfolio.modal.init();
       portfolio.logo.init();
+      
+      console.log('%c👋👋 Oh hey.\nFancy seeing you here! 👀\n\nWhy not check out my GitHub? https://github.com/meghanhorton/\nOr send me an email to meghan.leigh.horton@gmail.com.', 'font-size: 18px; font-family: "Helvetica Neue",Calibri,sans-serif; color: #7E57C2');
     }
   },
   portfolio.logo = {
